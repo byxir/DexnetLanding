@@ -33,8 +33,8 @@ export default function HomePage() {
               </span>
             </div>
             <div className="mt-6 flex space-x-6">
-              <div className="rounded-xg bg-glassTexture grid h-32 w-52 content-between p-3 backdrop-blur-md">
-                <div className="bg-lightElement flex h-10 w-10 items-center justify-center rounded-full">
+              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
                   <img
                     src="../../logos/dexLogo.png"
                     alt=""
@@ -46,8 +46,8 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">до 3800 tps</div>
                 </div>
               </div>
-              <div className="rounded-xg bg-glassTexture grid h-32 w-52 content-between p-3 backdrop-blur-md">
-                <div className="bg-lightElement flex h-10 w-10 items-center justify-center rounded-full p-[7px]">
+              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement p-[7px]">
                   <img
                     src="../../logos/ethLogo.png"
                     alt=""
@@ -59,8 +59,8 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">119 tps</div>
                 </div>
               </div>
-              <div className="rounded-xg bg-glassTexture grid h-32 w-52 content-between p-3 backdrop-blur-md">
-                <div className="bg-lightElement flex h-10 w-10 items-center justify-center rounded-full">
+              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
                   <img
                     src="../../logos/arbitrumLogo.png"
                     alt=""
@@ -72,8 +72,8 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">18 tps</div>
                 </div>
               </div>
-              <div className="rounded-xg bg-glassTexture grid h-32 w-52 content-between p-3 backdrop-blur-md">
-                <div className="bg-lightElement flex h-10 w-10 items-center justify-center rounded-full">
+              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
                   <img
                     src="../../logos/optimismLogo.png"
                     alt=""
@@ -85,8 +85,8 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">9 tps</div>
                 </div>
               </div>
-              <div className="rounded-xg bg-glassTexture grid h-32 w-52 content-between p-3 backdrop-blur-md">
-                <div className="bg-lightElement flex h-10 w-10 items-center justify-center rounded-full">
+              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
                   <img
                     src="../../logos/polyLogo.png"
                     alt=""
@@ -98,8 +98,8 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">41.4 tps</div>
                 </div>
               </div>
-              <div className="rounded-xg bg-glassTexture grid h-32 w-52 content-between p-3 backdrop-blur-md">
-                <div className="bg-lightElement flex h-10 w-10 items-center justify-center rounded-full">
+              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
                   <img
                     src="../../logos/bscLogo.png"
                     alt=""
@@ -121,17 +121,17 @@ export default function HomePage() {
             <div className="text-5xl font-bold">Преимущества</div>
           </div>
           <div className="flex space-x-20">
-            <div className="items-between bg-glassTexture relative grid h-96 w-96 justify-items-center space-y-2 rounded-xl p-8 backdrop-blur-md">
-              <div className="shadow-elementGlow absolute top-12 z-20 h-10 w-8"></div>
-              <div className="shadow-elementGlow2 absolute top-12 z-20 h-10 w-8"></div>
+            <div className="items-between relative grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
+              <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow"></div>
+              <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
               <img src="../../medal1.png" alt="" className="z-30" />
               <div className="w-3/4 text-center">
                 Валидаторы поддерживают сеть и получают вознаграждения
               </div>
             </div>
-            <div className="items-between bg-glassTexture relative z-10 grid h-96 w-96 justify-items-center space-y-2 rounded-xl p-8 backdrop-blur-md">
-              <div className="shadow-elementGlow absolute top-12 z-20 h-10 w-8"></div>
-              <div className="shadow-elementGlow2 absolute top-12 z-20 h-10 w-8"></div>
+            <div className="items-between relative z-10 grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
+              <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow"></div>
+              <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
 
               <img src="../../medal2.png" alt="" className="z-30" />
               <div className="text-center text-sm">
@@ -142,9 +142,9 @@ export default function HomePage() {
               </div>
               <div className="absolute"></div>
             </div>
-            <div className="items-between bg-glassTexture relative grid h-96 w-96 justify-items-center space-y-2 rounded-xl p-8 backdrop-blur-md">
-              <div className="shadow-elementGlow absolute top-12 z-20 ml-8 h-10 w-8"></div>
-              <div className="shadow-elementGlow2 absolute top-12 z-20 h-10 w-8"></div>
+            <div className="items-between relative grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
+              <div className="absolute top-12 z-20 ml-8 h-10 w-8 shadow-elementGlow"></div>
+              <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
               <img src="../../medal3.png" alt="" className="z-30" />
               <div className="w-3/4 text-center">
                 Эмиссия ограничена 3,000,000,000 DNC
@@ -167,7 +167,7 @@ export default function HomePage() {
               </div>
               <div className="text-2xl font-bold">
                 you need to purchase a{" "}
-                <span className="text-bannerGradientStart font-bold">
+                <span className="font-bold text-bannerGradientStart">
                   DexNode
                 </span>{" "}
                 device
@@ -232,13 +232,35 @@ export default function HomePage() {
         </div>
       </div>
       <div className="flex h-screen w-screen items-center justify-center">
-        <div className="max-w-7xl">
-          <div className="text-7xl font-bold">
-            DEXCHAIN <br></br>
-            ECOSYSTEM
-          </div>
+        <div className="max-w-7xl space-y-20">
+          <div className="text-7xl font-bold">DEXCHAIN ECOSYSTEM</div>
           <div className="flex space-x-8">
-            <div className="bg-glassTexture grid h-[500px] w-[307px] grid-rows-[3fr_2fr] gap-y-6 rounded-xl backdrop-blur-md">
+            <a
+              href="/"
+              className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
+            >
+              <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
+              <div className="absolute z-20 h-full w-full rounded-xl bg-gradient-to-b from-transparent to-helper to-75%"></div>
+              <div className="max-h-[500px]">
+                <img
+                  src="../../ecosystem/scan.png"
+                  alt=""
+                  className="h-full w-full transform object-cover"
+                />
+              </div>
+              <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
+                <div className="text-center text-lg text-bannerGradientStart">
+                  scan.dexchain.com
+                </div>
+                <div className="text-center text-lg">Block Explorer</div>
+              </div>
+            </a>
+            <a
+              href="/"
+              className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
+            >
+              <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
+              <div className="absolute z-20 h-full w-full rounded-xl bg-gradient-to-b from-transparent to-helper to-75%"></div>
               <div className="max-h-[500px]">
                 <img
                   src="../../ecosystem/app.png"
@@ -246,16 +268,69 @@ export default function HomePage() {
                   className="h-full w-full transform object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center">
-                <Link
-                  href="/"
-                  className="text-bannerGradientStart text-center text-lg"
-                >
+              <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
+                <div className="text-center text-lg text-bannerGradientStart">
                   scan.dexchain.com
-                </Link>
+                </div>
                 <div className="text-center text-lg">Block Explorer</div>
               </div>
-            </div>
+            </a>
+            <a
+              href="/"
+              className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
+            >
+              <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
+              <div className="absolute z-20 h-full w-full rounded-xl bg-gradient-to-b from-transparent to-helper to-75%"></div>
+              <div className="max-h-[500px]">
+                <img
+                  src="../../ecosystem/bridge.png"
+                  alt=""
+                  className="h-full w-full transform object-cover"
+                />
+              </div>
+              <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
+                <div className="text-center text-lg text-bannerGradientStart">
+                  scan.dexchain.com
+                </div>
+                <div className="text-center text-lg">Block Explorer</div>
+              </div>
+            </a>
+            <a
+              href="/"
+              className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
+            >
+              <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
+              <div className="absolute z-20 h-full w-full rounded-xl bg-gradient-to-b from-transparent to-helper to-75%"></div>
+              <div className="max-h-[500px]">
+                <img
+                  src="../../ecosystem/wallet.png"
+                  alt=""
+                  className="h-full w-full transform object-cover"
+                />
+              </div>
+              <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
+                <div className="text-center text-lg text-bannerGradientStart">
+                  scan.dexchain.com
+                </div>
+                <div className="text-center text-lg">Block Explorer</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="flex h-screen w-screen items-center justify-center">
+        <div className="max-w-7xl space-y-12">
+          <div className="text-5xl font-bold">
+            СООБЩЕСТВО
+            <br></br>
+            DEXCHAIN
+          </div>
+          <div className="max-w-lg">
+            <p className="text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
           </div>
         </div>
       </div>
