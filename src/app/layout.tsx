@@ -68,7 +68,7 @@ export default function RootLayout({
           </div>
           <img
             src="../../backgroundPng.png"
-            className="fixed -z-50 h-screen w-screen"
+            className="fixed -z-50 h-screen w-screen object-cover"
           />
           <div className="h-full w-full">{children}</div>
         </div>

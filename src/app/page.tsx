@@ -8,8 +8,8 @@ import OutlineButton from "~/components/OutlineButton";
 
 export default function HomePage() {
   return (
-    <div className="h-screen w-full snap-y snap-normal overflow-y-scroll scroll-smooth">
-      <div className="relative flex h-screen w-screen shrink-0 snap-start justify-center overflow-x-hidden">
+    <div className="snap h-screen w-full overflow-y-scroll scroll-smooth">
+      <div className="relative flex h-screen w-screen justify-center overflow-x-hidden">
         <img
           src="../../chip.png"
           alt=""
@@ -115,35 +115,108 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="grid h-screen w-screen shrink-0 snap-start flex-col items-center justify-items-center">
+      <div className="grid h-screen w-screen flex-col items-center justify-items-center">
         <div className="flex max-w-7xl flex-col space-y-20">
           <div className="grid w-full items-center">
             <div className="text-5xl font-bold">Преимущества</div>
           </div>
           <div className="flex space-x-20">
-            <div className="grid h-96 w-96 items-center justify-items-center rounded-xl bg-glassTexture backdrop-blur-md">
+            <div className="items-between grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
               <img src="../../medal1.png" alt="" className="" />
               <div className="w-3/4 text-center">
                 Валидаторы поддерживают сеть и получают вознаграждения
               </div>
             </div>
-            <div className="grid h-96 w-96 items-center justify-items-center rounded-xl bg-glassTexture backdrop-blur-md">
+            <div className="items-between grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
               <img src="../../medal2.png" alt="" className="" />
-              <div className="w-3/4 text-center">
+              <div className="text-center text-sm">
                 Газ с транзакций перераспределяется между кошельками
                 валидаторами в пропорциях 90% – между всеми кошельками
                 валидаторами, 10% – на генезис кошелек (дефляционная модель
                 бизнеса)
               </div>
             </div>
-            <div className="grid h-96 w-96 items-center justify-items-center rounded-xl bg-glassTexture backdrop-blur-md">
+            <div className="items-between grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
               <img src="../../medal3.png" alt="" className="" />
               <div className="w-3/4 text-center">
                 Эмиссия ограничена 3,000,000,000 DNC
               </div>
-              <div className="flex space-x-4 px-4">
+              <div className="mt-2 flex space-x-4 px-4">
                 <GreenButton text="Whitepaper" />
                 <OutlineButton text="Whitepaper" className="text-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="flex h-screen w-screen max-w-7xl items-center justify-items-center space-x-[10%]">
+          <div className="space-y-12">
+            <div className="space-y-4">
+              <div className="max-w-96 text-5xl font-bold">
+                To start earning profits
+              </div>
+              <div className="text-2xl font-bold">
+                you need to purchase a{" "}
+                <span className="font-bold text-bannerGradientStart">
+                  DexNode
+                </span>{" "}
+                device
+              </div>
+            </div>
+            <div className="max-w-xl">
+              <p className="">
+                Node of the global decentralized Dexnet network generating
+                tokens for maintaining the network. The Dexnet Node features a
+                high-frequency ground communication channel operating at 915
+                MHz. Dexnet Nodes detect each other within a radius of up to 5.5
+                km and establish a direct communication channel, overlapping
+                each other with a ground radio signal based on the principle of
+                honeycomb cells.
+              </p>
+            </div>
+            <GreenButton text="Buy DexNode" />
+          </div>
+          <div className="">
+            <img src="../../dexNode1.png" alt="" className="" />
+            <div className="mt-20 space-y-4 ">
+              <div className="flex space-x-8">
+                <div className="space-y-4">
+                  <div className="flex space-x-2">
+                    <span className="text-bannerGradientStart">CPU:</span>
+                    <span className="">8 core Amlogic s912 Cortex</span>
+                  </div>
+                  <div className="flex space-x-2">
+                    <span className="text-bannerGradientStart">ETHERNET</span>
+                    <span className="">RJ45</span>
+                  </div>
+                  <div className="flex space-x-2">
+                    <span className="text-bannerGradientStart">
+                      Satellite system:
+                    </span>
+                    <span className="">SpaceX SWARM</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex space-x-2">
+                    <span className="text-bannerGradientStart">RAM:</span>
+                    <span className="">4 GB</span>
+                  </div>
+                  <div className="flex space-x-2">
+                    <span className="text-bannerGradientStart">SD:</span>
+                    <span className="">2TB</span>
+                  </div>
+                  <div className="flex space-x-2">
+                    <span className="text-bannerGradientStart">GSM:</span>
+                    <span className="">with e-sim DEX Mobile</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex space-x-2">
+                <span className="text-bannerGradientStart">DexWan: </span>
+                <span className="">
+                  ownhigh-frequency terrestial channel 915MHz, 5.5k m k
+                </span>
               </div>
             </div>
           </div>
