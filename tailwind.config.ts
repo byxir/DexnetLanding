@@ -23,7 +23,7 @@ export default {
         elementDarkBlue: "rgba(15, 23, 42, 0.34)",
         complementaryGlow: "#00FFF0",
         brightBorder: "#02FFC5",
-        lightElement: "rgba(217, 217, 217, 0.10)",
+        lightElement: "rgba(217, 217, 217, 0.1)",
         elementBorder: "#0C6870",
         helperStart: "#053234",
         helperEnd: "rgb(6,58,59)",

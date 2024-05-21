@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export const GreenButton = ({
+export const OutlineButton = ({
   text,
   className = "",
 }: {
@@ -15,11 +15,11 @@ export const GreenButton = ({
     <button
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => setPressed(false)}
-      className={`${pressed ? "translate-y" : "hover:-translate-y-1"} inner-border inner-border-white/50 w-full max-w-52 cursor-pointer whitespace-nowrap rounded-xg bg-gradient-to-t from-buttonGradientStart to-buttonGradientEnd py-4 font-bold text-black transition ease-in-out ${className}`}
+      className={`${pressed ? "translate-y" : "hover:-translate-y-1"} inner-border inner-border-white/50 bg-muted w-52 cursor-pointer whitespace-nowrap rounded-xg border border-bannerGradientStart px-7 py-4 font-bold text-black transition ease-in-out ${className}`}
     >
       <div className="">{text}</div>
     </button>
   );
 };
 
-export default GreenButton;
+export default OutlineButton;
