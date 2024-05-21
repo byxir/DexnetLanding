@@ -1,11 +1,8 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 import "~/styles/globals.css";
 
 import { exo } from "~/utils/fontComponents";
 import Link from "next/link";
 import GreenButton from "~/components/GreenButton";
-import Background from "~/_vectors/Frame";
 
 export const metadata = {
   title: "Create T3 App",
@@ -21,54 +18,55 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${exo.variable}`}>
       <body>
-        <div className="relative flex h-screen w-screen justify-center font-exo text-white">
-          <div className="fixed z-50 mx-10 mt-4 flex h-20 w-full max-w-7xl items-center justify-between rounded-xg bg-glassTexture px-3 backdrop-blur-md">
+        <div className="font-exo relative flex h-screen w-screen justify-center text-white">
+          <div className="rounded-xg bg-glassTexture fixed z-50 mx-10 mt-4 flex h-20 w-full max-w-7xl items-center justify-between px-3 backdrop-blur-xl">
             <Link href="/" className="">
               <img src="../../logo.png" alt="" className="" />
             </Link>
             <div className="flex space-x-6">
               <Link
                 href="/"
-                className="ease-in-out hover:text-bannerGradientStart"
+                className="hover:text-bannerGradientStart ease-in-out"
               >
                 Main
               </Link>
               <Link
                 href="/"
-                className="ease-in-out hover:text-bannerGradientStart"
+                className="hover:text-bannerGradientStart ease-in-out"
               >
                 Advantages
               </Link>
               <Link
                 href="/"
-                className="ease-in-out hover:text-bannerGradientStart"
+                className="hover:text-bannerGradientStart ease-in-out"
               >
                 How to start
               </Link>
               <Link
                 href="/"
-                className="ease-in-out hover:text-bannerGradientStart"
+                className="hover:text-bannerGradientStart ease-in-out"
               >
                 Ecosystem
               </Link>
               <Link
                 href="/"
-                className="ease-in-out hover:text-bannerGradientStart"
+                className="hover:text-bannerGradientStart ease-in-out"
               >
                 Community
               </Link>
               <Link
                 href="/"
-                className="ease-in-out hover:text-bannerGradientStart"
+                className="hover:text-bannerGradientStart ease-in-out"
               >
                 Become a partner
               </Link>
             </div>
-            <GreenButton text={"Connect Wallet"} />
+            <GreenButton text={"Connect Wallet"} className="w-48" />
           </div>
           <img
             src="../../backgroundPng.png"
-            className="fixed -z-50 h-screen w-screen object-cover"
+            alt="background"
+            className="absolute -z-10 h-full w-full object-cover"
           />
           <div className="h-full w-full">{children}</div>
         </div>

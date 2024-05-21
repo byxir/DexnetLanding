@@ -25,8 +25,7 @@ export default {
         brightBorder: "#02FFC5",
         lightElement: "rgba(217, 217, 217, 0.1)",
         elementBorder: "#0C6870",
-        helperStart: "#053234",
-        helperEnd: "rgb(6,58,59)",
+        helper: "#0C1C1C",
         glassTexture: "rgba(50, 50, 50, 0.19)",
 
         //stick border colors
