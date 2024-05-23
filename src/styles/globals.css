@@ -10,3 +10,31 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animation-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animation-flicker {
+  animation: flicker 1.5s infinite;
+}

@@ -16,6 +16,7 @@ import OutlineButton from "~/components/OutlineButton";
 import TokensCarousel from "~/components/TokensCarousel";
 import GlassCard from "~/components/glassCard";
 import { useScroll } from "./layout";
+import { Stick1, Stick2, Sticks } from "~/components/sticks";
 
 export default function HomePage() {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
@@ -31,9 +32,12 @@ export default function HomePage() {
         <img
           src="../../chip.png"
           alt=""
-          className="absolute top-[380px] -z-10 max-w-[350vw] object-cover md:-top-[25%] md:left-[17%] md:h-[125vh] md:w-[125vw]"
+          className="absolute top-[380px] z-20 max-w-[350vw] object-cover md:-top-[22%] md:left-[7%] md:h-[125vh] md:w-[125vw]"
         />
-        <div className="mb-[8vh] mt-[21.5vh] grid w-full max-w-7xl content-between justify-items-center md:justify-items-start">
+        <div className="absolute right-[24%] top-0 ">
+          <Sticks />
+        </div>
+        <div className="z-30 mb-[8vh] mt-[21.5vh] grid w-full max-w-7xl content-between justify-items-center md:justify-items-start">
           <div className="grid justify-items-center md:block">
             <div className="text-center text-5xl font-bold md:text-8xl">
               DexnetChain
@@ -49,7 +53,7 @@ export default function HomePage() {
               <span>It provides relatively</span>{" "}
               <span className="font-bold">
                 {" "}
-                Faster transactions by using the Byzantine Fault Tolerance (BST)
+                Faster transactions by using the Byzantine Fault Tolerance (BFT)
               </span>
             </div>
             <div className="mt-6 hidden max-w-7xl grid-cols-6 gap-x-6 md:grid">

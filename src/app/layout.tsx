@@ -131,7 +131,7 @@ export default function RootLayout({
               </div>
             ))}
           </div>
-          <div className="animate-horizontalFloat md:animate-horizontalFloatPartial fixed -top-32 left-0 z-[35] h-64 w-64 rotate-45 md:-top-60 md:h-96 md:w-96 ">
+          <div className="animate-horizontalFloat md:animate-horizontalFloatPartial fixed -top-32 left-0 z-0 h-64 w-64 rotate-45 md:-top-60 md:h-96 md:w-96 ">
             <div className="bg-movingGlow h-full w-full rotate-[35deg] blur-[100px] md:blur-[130px]"></div>
           </div>
           <div className="fixed z-50 mt-4 flex h-14 w-11/12 items-center justify-between rounded-xg bg-glassTexture px-4 backdrop-blur-xl md:h-20 md:w-full md:max-w-7xl">
