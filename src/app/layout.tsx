@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang="en" className={`${exo.variable}`}>
       <body>
         <div className="relative flex h-screen w-screen justify-center font-exo text-white">
-          <div className="fixed z-50 mt-4 flex h-20 w-11/12 items-center justify-between rounded-xg bg-glassTexture px-3 backdrop-blur-xl md:w-full md:max-w-7xl">
+          <div className="fixed z-50 mt-4 flex h-14 w-11/12 items-center justify-between rounded-xg bg-glassTexture px-4 backdrop-blur-xl md:h-20 md:w-full md:max-w-7xl">
             <Link href="/" className="">
-              <img src="../../logo.png" alt="" className="" />
+              <img src="../../logo.png" alt="" className="w-36 md:w-auto" />
             </Link>
 
             <div className="flex space-x-6">
@@ -67,7 +67,7 @@ export default function RootLayout({
               text={"Connect Wallet"}
               className="hidden w-48 md:block"
             />
-            <Bars2Icon className="h-8 w-8" />
+            <Bars2Icon className="h-7 w-7" />
           </div>
           <img
             src="../../backgroundPng.png"
