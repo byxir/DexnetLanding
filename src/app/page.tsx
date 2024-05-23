@@ -2,54 +2,63 @@
 
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import Facebook from "public/socials/Facebook";
+import Instagram from "public/socials/Instagram";
+import LinkedIn from "public/socials/LinkedIn";
+import Twitter from "public/socials/Twitter";
+import YouTube from "public/socials/YouTube";
+import CommunityCarousel from "~/components/CommunityCarousel";
+import EcosystemCarousel from "~/components/EcosystemCarousel";
 import GreenButton from "~/components/GreenButton";
+import MedalCarousel from "~/components/MedalCarousel";
 import OutlineButton from "~/components/OutlineButton";
+import TokensCarousel from "~/components/TokensCarousel";
+import GlassCard from "~/components/glassCard";
 
 export default function HomePage() {
   return (
-    <div className="snap h-screen w-full overflow-y-scroll scroll-smooth">
-      <div className="relative flex h-screen w-screen justify-center overflow-x-hidden">
+    <div className="h-auto w-screen overflow-x-hidden md:w-full">
+      <div className="relative flex min-h-screen w-screen justify-center overflow-x-hidden">
         <img
           src="../../chip.png"
           alt=""
-          className="absolute -top-[25%] left-[17%] -z-10 h-[125vh] w-[125vw] object-cover"
+          className="absolute -top-[25%] left-[17%] -z-10 hidden h-[125vh] w-[125vw] object-cover md:block"
         />
-        <div className="mb-[8vh] mt-[21.5vh] grid w-full max-w-7xl content-between">
+        <div className="mb-[8vh] mt-[21.5vh] grid w-full max-w-7xl content-between justify-items-center md:justify-items-start">
           <div className="">
-            <div className="text-8xl font-bold">DexNetChain</div>
+            <div className="text-5xl font-bold md:text-8xl">DexnetChain</div>
             <div className="mt-8 w-96 text-xl font-bold">
               EVM compatible blockchain powered by confirmation of authority
-              (PoA)
+              (COA)
             </div>
             <GreenButton text={"Connect Wallet"} className="mt-8 w-48" />
           </div>
-          <div className="">
+          <div className="w-full max-w-7xl">
             <div className="w-full max-w-xl text-xl">
               <span>It provides relatively</span>{" "}
               <span className="font-bold">
                 {" "}
-                faster transactions by using the Byzantine Fault Tolerance (BFT)
+                Faster transactions by using the Byzantine Fault Tolerance (BST)
               </span>
             </div>
-            <div className="mt-6 flex space-x-6">
-              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+            <div className="mt-6 hidden max-w-7xl grid-cols-6 gap-x-6 md:grid">
+              <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/dexLogo.png"
+                    src="../../logos/dexlogo.png"
                     alt=""
                     className="h-5 w-5"
                   />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">DexnetChain</div>
-                  <div className="text-buttonGradientEnd">до 3800 tps</div>
+                  <div className="text-buttonGradientEnd">До 3800 tps</div>
                 </div>
               </div>
-              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement p-[7px]">
+              <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full p-[7px]">
                   <img
-                    src="../../logos/ethLogo.png"
+                    src="../../logos/ethlogo.png"
                     alt=""
                     className="object-fit h-full"
                   />
@@ -59,10 +68,10 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">119 tps</div>
                 </div>
               </div>
-              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+              <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/arbitrumLogo.png"
+                    src="../../logos/arbitrumlogo.png"
                     alt=""
                     className="h-6 w-6"
                   />
@@ -72,10 +81,10 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">18 tps</div>
                 </div>
               </div>
-              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+              <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/optimismLogo.png"
+                    src="../../logos/optimismlogo.png"
                     alt=""
                     className="h-6 w-6"
                   />
@@ -85,10 +94,10 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">9 tps</div>
                 </div>
               </div>
-              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+              <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/polyLogo.png"
+                    src="../../logos/polylogo.png"
                     alt=""
                     className="h-5 w-5"
                   />
@@ -98,29 +107,37 @@ export default function HomePage() {
                   <div className="text-buttonGradientEnd">41.4 tps</div>
                 </div>
               </div>
-              <div className="grid h-32 w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+              <div className="grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
+                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/bscLogo.png"
+                    src="../../logos/bsclogo.png"
                     alt=""
                     className="h-5 w-5"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <div className="text-lg font-bold">BSC</div>
+                  <div className="text-lg font-bold">Bsc</div>
                   <div className="text-buttonGradientEnd">40.83 tps</div>
                 </div>
               </div>
+            </div>
+            <div className="block md:hidden">
+              <TokensCarousel />
             </div>
           </div>
         </div>
       </div>
       <div className="grid h-screen w-screen flex-col items-center justify-items-center">
-        <div className="flex max-w-7xl flex-col space-y-20">
+        <div className="flex w-screen flex-col space-y-6 md:w-full md:max-w-7xl md:space-y-20">
           <div className="grid w-full items-center">
-            <div className="text-5xl font-bold">Преимущества</div>
+            <div className="text-center text-3xl font-bold md:text-start md:text-5xl">
+              Преимущества
+            </div>
           </div>
-          <div className="flex space-x-20">
+          <div className="block md:hidden">
+            <MedalCarousel />
+          </div>
+          <div className={`hidden space-x-20 md:flex`}>
             <div className="items-between relative grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
               <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow"></div>
               <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
@@ -149,8 +166,8 @@ export default function HomePage() {
               <div className="w-3/4 text-center">
                 Эмиссия ограничена 3,000,000,000 DNC
               </div>
-              <div className="mt-2 flex space-x-4 px-4">
-                <GreenButton text="Whitepaper" />
+              <div className="mt-2 grid w-full grid-cols-2 gap-x-4 px-4">
+                <GreenButton text="Whitepaper" className="w-full" />
                 <OutlineButton text="Whitepaper" className="text-white" />
                 <div className="absolute"></div>
               </div>
@@ -159,13 +176,13 @@ export default function HomePage() {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="flex h-screen w-screen max-w-7xl items-center justify-items-center space-x-[10%]">
+        <div className="flex h-screen w-screen max-w-7xl flex-col items-center justify-items-center md:flex-row md:space-x-[10%]">
           <div className="space-y-12">
             <div className="space-y-4">
-              <div className="max-w-96 text-5xl font-bold">
+              <div className="w-full max-w-96 text-center text-3xl font-bold md:text-start md:text-5xl">
                 To start earning profits
               </div>
-              <div className="text-2xl font-bold">
+              <div className="text-center text-lg font-bold md:text-start md:text-2xl">
                 you need to purchase a{" "}
                 <span className="font-bold text-bannerGradientStart">
                   DexNode
@@ -174,7 +191,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="max-w-xl">
-              <p className="">
+              <p className="px-4 text-center text-xs md:px-0 md:text-start md:text-base">
                 Node of the global decentralized Dexnet network generating
                 tokens for maintaining the network. The Dexnet Node features a
                 high-frequency ground communication channel operating at 915
@@ -184,12 +201,14 @@ export default function HomePage() {
                 honeycomb cells.
               </p>
             </div>
-            <GreenButton text="Buy DexNode" />
+            <div className="hidden justify-center md:flex md:justify-start">
+              <GreenButton text="Buy DexNode" className="w-64" />
+            </div>
           </div>
-          <div className="">
-            <img src="../../dexNode1.png" alt="" className="mix-blend-screen" />
-            <div className="mt-20 space-y-4 ">
-              <div className="flex space-x-8">
+          <div className="mt-12 flex flex-col justify-center px-4 md:mt-0 md:justify-start">
+            <img src="../../dexNode1.gif" alt="" className="mix-blend-screen" />
+            <div className="mt-12 space-y-4 text-xxs md:text-base ">
+              <div className="flex space-x-5">
                 <div className="space-y-4">
                   <div className="flex space-x-2">
                     <span className="text-bannerGradientStart">CPU:</span>
@@ -229,12 +248,20 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+          <div className="mt-10 flex justify-center md:hidden md:justify-start">
+            <GreenButton text="Buy DexNode" className="w-64" />
+          </div>
         </div>
       </div>
-      <div className="flex h-screen w-screen items-center justify-center">
-        <div className="max-w-7xl space-y-20">
-          <div className="text-7xl font-bold">DEXCHAIN ECOSYSTEM</div>
-          <div className="flex space-x-8">
+      <div
+        id="ecosystem"
+        className="flex h-screen w-screen items-center justify-center"
+      >
+        <div className="w-screen max-w-7xl md:space-y-20">
+          <div className="text-center text-3xl font-bold md:text-start md:text-7xl">
+            DEXCHAIN ECOSYSTEM
+          </div>
+          <div className="hidden space-x-8 md:flex">
             <a
               href="/"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
@@ -316,21 +343,119 @@ export default function HomePage() {
               </div>
             </a>
           </div>
+          <div className="block md:hidden">
+            <EcosystemCarousel />
+          </div>
         </div>
       </div>
-      <div className="flex h-screen w-screen items-center justify-center">
-        <div className="max-w-7xl space-y-12">
-          <div className="text-5xl font-bold">
+      <div className="flex min-h-screen w-screen items-center justify-center">
+        <div className="relative flex w-full max-w-7xl flex-col md:space-y-12">
+          <div className="mb-12 text-center text-5xl font-bold md:mb-0 md:text-start">
             СООБЩЕСТВО
             <br></br>
             DEXCHAIN
           </div>
-          <div className="max-w-lg">
-            <p className="text-xl">
+          <div className="mb-12 flex max-w-lg justify-center md:mb-0 md:block">
+            <p className="w-11/12 text-center text-base md:w-full md:text-start md:text-xl">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
+          </div>
+          <div className="flex justify-center space-x-8 md:justify-start">
+            <div className="flex flex-col justify-center md:block">
+              <div className="text-center text-5xl font-bold text-bannerGradientStart md:text-start">
+                46
+              </div>
+              <div className="w-max text-center text-lg md:text-start">
+                countries
+              </div>
+            </div>
+            <div className="">
+              <div className="text-center text-5xl font-bold text-bannerGradientStart md:text-start">
+                271 890
+              </div>
+              <div className="text-center text-lg md:text-start">clients</div>
+            </div>
+          </div>
+
+          <div className="absolute -left-[10vw] top-[420px] w-[120vw] max-w-6xl overflow-x-hidden md:-top-16 md:left-[55%] md:w-full">
+            <img src="../../WorldMap.png" alt="" className="w-full" />
+          </div>
+          <div className="hidden md:block">
+            <div className="grid max-w-6xl grid-cols-4 grid-rows-2 gap-8">
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+              <GlassCard text="PHOTO" />
+            </div>
+          </div>
+          <div className="mt-52 block md:hidden">
+            <CommunityCarousel />
+          </div>
+        </div>
+      </div>
+      <div className="flex h-screen w-screen flex-col items-center justify-center">
+        <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
+          <div className="text-center text-4xl font-bold">OUR PARTNERS</div>
+          <div className="flex space-x-3 md:space-x-6">
+            <GlassCard text="Logo" className="h-16 w-full" />
+            <GlassCard text="Logo" className="h-16 w-full" />
+            <GlassCard text="Logo" className="h-16 w-full" />
+            <GlassCard text="Logo" className="hidden h-16 w-full md:grid" />
+            <GlassCard text="Logo" className="hidden h-16 w-full md:grid" />
+          </div>
+        </div>
+        <div className="mt-24 grid w-11/12 justify-items-center md:w-full">
+          <div className="text-center text-3xl font-bold md:text-5xl">
+            BECOME A DEXCHAIN
+            <br></br>
+            PARTNER
+          </div>
+          <div className="mt-8 max-w-4xl text-center text-sm md:text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </div>
+          <GreenButton text="Become a partner" className="mt-8 w-64" />
+        </div>
+      </div>
+      <div className="flex justify-center bg-footerColor py-10">
+        <div className="flex w-full max-w-7xl flex-col items-center justify-center md:flex-row md:justify-between">
+          <div className="mb-8 grid justify-items-center space-y-4 md:mb-0 md:block">
+            <img src="../../logo.png" alt="" className="w-64" />
+            <div className="hidden text-sm md:block">
+              Copyright © 2010-2024 Dexnet technology.<br></br>
+              Все права защищены.
+            </div>
+          </div>
+          <div className="hidden space-x-6 md:flex">
+            <div className="">Privacy Policy</div>
+            <div className="">Terms of Service</div>
+          </div>
+          <div className="space-y-4">
+            <div className="pb-1 text-center font-bold text-white text-opacity-50 md:text-start">
+              FOLLOW US ON SOCIALS
+            </div>
+            <div className="flex space-x-6 md:space-x-3">
+              <Facebook />
+              <LinkedIn />
+              <Instagram />
+              <Twitter />
+              <YouTube />
+            </div>
+          </div>
+          <div className="mt-8 flex space-x-6 md:hidden">
+            <div className="">Privacy Policy</div>
+            <div className="">Terms of Service</div>
+          </div>
+          <div className="mt-12 block text-center text-xs md:hidden">
+            Copyright © 2010-2024 Dexnet technology.<br></br>
+            Все права защищены.
           </div>
         </div>
       </div>

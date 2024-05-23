@@ -1,12 +1,20 @@
-import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import type { Config } from "tailwindcss";
 
 export default {
   content: ["./src/**/*.tsx"],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
+      fontSize: {
+        xxs: "0.65rem",
+      },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
         exo: ["var(--font-exo)"],
       },
       boxShadow: {
@@ -27,10 +35,8 @@ export default {
         elementBorder: "#0C6870",
         helper: "#0C1C1C",
         glassTexture: "rgba(50, 50, 50, 0.19)",
-
-        //stick border colors
-
-        stick1: "#",
+        footerColor: "#022325",
+        glassElementGlowHelper: "rgba(0, 232, 175, 0.5)",
       },
       animation: {
         floatUp: "floatUp 10s linear infinite",
@@ -57,7 +63,23 @@ export default {
       borderRadius: {
         xg: "10px",
       },
+      screens: {
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
+
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

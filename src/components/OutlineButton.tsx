@@ -15,9 +15,9 @@ export const OutlineButton = ({
     <button
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => setPressed(false)}
-      className={`${pressed ? "translate-y" : "hover:-translate-y-1"} inner-border inner-border-white/50 bg-muted h-max w-52 cursor-pointer whitespace-nowrap rounded-xg border border-bannerGradientStart px-7 py-4 font-bold text-black transition ease-in-out ${className}`}
+      className={`${pressed ? "translate-y" : "hover:-translate-y-1"} inner-border inner-border-white/50 bg-muted rounded-xg border-bannerGradientStart h-max w-full cursor-pointer whitespace-nowrap border py-4 font-bold text-black transition ease-in-out ${className}`}
     >
-      <div className="">{text}</div>
+      <div className="w-full">{text}</div>
     </button>
   );
 };
