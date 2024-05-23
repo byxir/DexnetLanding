@@ -72,7 +72,7 @@ export const Sticks = () => {
         }}
       />
       <div
-        className={`z-10 ml-2 mt-16 h-[350px] w-[1px] bg-stick-2  md:mt-0`}
+        className={`z-10 ml-2 mt-12 h-[270px] w-[1px] bg-stick-2  md:mt-0`}
         style={{
           animation: `flicker 3s infinite ${getRandomNumber()}, float 10s ease-in-out infinite ${getRandomNumber()}`,
         }}
@@ -102,7 +102,7 @@ export const Sticks = () => {
         }}
       />
       <div
-        className={`z-10 ml-2 mt-4 hidden h-[350px] w-[1px]  bg-stick-3 md:mt-0  md:block`}
+        className={`z-10 ml-2 mt-10 hidden h-[350px] w-[1px]  bg-stick-3 md:mt-0  md:block`}
         style={{
           animation: `flicker 3s infinite ${getRandomNumber()}, float 10s ease-in-out infinite ${getRandomNumber()}`,
         }}

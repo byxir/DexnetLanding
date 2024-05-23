@@ -62,24 +62,28 @@ export default {
         floatDown: "floatDown 10s linear infinite",
         stickFlicker: "stickFlicker 5s linear infinite",
         stickFloat: "stickFloat 1s linear infinite",
+        float1: "float1 10s linear infinite",
+        float2: "float2 10s linear infinite",
+        float3: "float3 10s linear infinite",
+        float4: "float4 10s linear infinite",
       },
 
       keyframes: {
-        float1: {
-          "0%, 100%": { transform: "translateY(100px)" },
-          "50%": { transform: "translateY(0)" },
-        },
-        float2: {
-          "0%, 100%": { transform: "translateY(90px)" },
-          "50%": { transform: "translateY(0)" },
+        float4: {
+          "0%, 100%": { transform: "translateY(-100px) scale(1)" },
+          "50%": { transform: "translateY(0) scale(0.6)" },
         },
         float3: {
-          "0%, 100%": { transform: "translateY(80px)" },
-          "50%": { transform: "translateY(0)" },
+          "0%, 100%": { transform: "translateY(-60px) scale(1)" },
+          "50%": { transform: "translateY(0) scale(0.8)" },
         },
-        float4: {
-          "0%, 100%": { transform: "translateY(70px)" },
-          "50%": { transform: "translateY(0)" },
+        float2: {
+          "0%, 100%": { transform: "translateY(-30px) scale(1)" },
+          "50%": { transform: "translateY(0) scale(0.9)" },
+        },
+        float1: {
+          "0%, 100%": { transform: "translateY(-10px) scale(1)" },
+          "50%": { transform: "translateY(0) scale(1)" },
         },
         horizontalFloat: {
           "0%, 100%": { transform: "translateX(100vw)" },
