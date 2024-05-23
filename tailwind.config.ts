@@ -21,6 +21,7 @@ export default {
         elementGlow: "0 0 151px #01E2AB",
         elementGlow2: "0 0 88px #01E2AB",
         customMd: "0 4px 4px rgba(0, 0, 0, 0.25)",
+        elementGlow3: "0px 0px 20px 10px #07FEF0",
       },
       colors: {
         mainBg: "#001110",
@@ -37,9 +38,12 @@ export default {
         glassTexture: "rgba(50, 50, 50, 0.19)",
         footerColor: "#022325",
         glassElementGlowHelper: "rgba(0, 232, 175, 0.5)",
+
+        movingGlow: "#07FEF0",
       },
       animation: {
-        floatUp: "floatUp 10s linear infinite",
+        horizontalFloat: "horizontalFloat 100s linear infinite",
+        horizontalFloatPartial: "horizontalFloatPartial 100s linear infinite",
         floatDown: "floatDown 10s linear infinite",
       },
       keyframes: {
@@ -58,6 +62,14 @@ export default {
         float4: {
           "0%, 100%": { transform: "translateY(70px)" },
           "50%": { transform: "translateY(0)" },
+        },
+        horizontalFloat: {
+          "0%, 100%": { transform: "translateX(100vw)" },
+          "50%": { transform: "translateX(0)" },
+        },
+        horizontalFloatPartial: {
+          "0%, 100%": { transform: "translateX(60vw)" },
+          "50%": { transform: "translateX(0)" },
         },
       },
       borderRadius: {

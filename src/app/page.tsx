@@ -14,11 +14,18 @@ import MedalCarousel from "~/components/MedalCarousel";
 import OutlineButton from "~/components/OutlineButton";
 import TokensCarousel from "~/components/TokensCarousel";
 import GlassCard from "~/components/glassCard";
+import { useScroll } from "./layout";
 
 export default function HomePage() {
+  const { elementsRefs } = useScroll();
+
   return (
     <div className="h-auto w-screen overflow-x-hidden md:w-full">
-      <div className="relative flex min-h-screen w-screen justify-center overflow-x-hidden">
+      <div
+        ref={elementsRefs.homeRef}
+        id="home"
+        className="relative flex min-h-screen w-screen justify-center overflow-x-hidden overflow-y-hidden"
+      >
         <img
           src="../../chip.png"
           alt=""
@@ -129,7 +136,11 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="grid h-screen w-screen flex-col items-center justify-items-center">
+      <div
+        ref={elementsRefs.advantagesRef}
+        id="advantages"
+        className="grid h-screen w-screen flex-col items-center justify-items-center"
+      >
         <div className="flex w-screen flex-col space-y-6 md:w-full md:max-w-7xl md:space-y-20">
           <div className="grid w-full items-center">
             <div className="text-center text-3xl font-bold md:text-start md:text-5xl">
@@ -177,7 +188,11 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div
+        ref={elementsRefs.dexNodeRef}
+        id="dexNode"
+        className="flex justify-center"
+      >
         <div className="flex h-screen w-screen max-w-7xl flex-col items-center justify-items-center md:flex-row md:space-x-[10%]">
           <div className="space-y-12">
             <div className="space-y-4">
@@ -256,6 +271,7 @@ export default function HomePage() {
         </div>
       </div>
       <div
+        ref={elementsRefs.ecosystemRef}
         id="ecosystem"
         className="flex h-screen w-screen items-center justify-center"
       >
@@ -350,7 +366,11 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex min-h-screen w-screen items-center justify-center">
+      <div
+        ref={elementsRefs.communityRef}
+        id="community"
+        className="relative flex min-h-screen w-screen items-center justify-center"
+      >
         <div className="relative flex w-full max-w-7xl flex-col md:space-y-12">
           <div className="mb-12 text-center text-5xl font-bold md:mb-0 md:text-start">
             СООБЩЕСТВО
@@ -382,8 +402,9 @@ export default function HomePage() {
           </div>
 
           <div className="absolute -left-[10vw] top-[420px] w-[120vw] max-w-6xl overflow-x-hidden md:-top-16 md:left-[55%] md:w-full">
-            <img src="../../WorldMap.png" alt="" className="w-full" />
+            <img src="../../WorldMap.png" alt="" className="z-20 w-full" />
           </div>
+          <div className=""></div>
           <div className="hidden md:block">
             <div className="grid max-w-6xl grid-cols-4 grid-rows-2 gap-8">
               <GlassCard text="PHOTO" />
@@ -400,8 +421,15 @@ export default function HomePage() {
             <CommunityCarousel />
           </div>
         </div>
+        <div className="absolute -right-40 z-0">
+          <div className="bg-movingGlow h-80 w-80 rounded-full blur-[100px]"></div>
+        </div>
       </div>
-      <div className="flex h-screen w-screen flex-col items-center justify-center">
+      <div
+        ref={elementsRefs.partnersRef}
+        id="partners"
+        className="flex h-screen w-screen flex-col items-center justify-center"
+      >
         <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
           <div className="text-center text-4xl font-bold">OUR PARTNERS</div>
           <div className="flex space-x-3 md:space-x-6">
@@ -426,7 +454,7 @@ export default function HomePage() {
           <GreenButton text="Become a partner" className="mt-8 w-64" />
         </div>
       </div>
-      <div className="flex justify-center bg-footerColor py-10">
+      <div id="footer" className="flex justify-center bg-footerColor py-10">
         <div className="flex w-full max-w-7xl flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-8 grid justify-items-center space-y-4 md:mb-0 md:block">
             <img src="../../logo.png" alt="" className="w-64" />
