@@ -27,7 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const router = useRouter();
-  const [hash, setHash] = useState("#home");
+  const [currentHash, setCurrentHash] = useState(
+    window.location.hash ?? "#home",
+  );
 
   const elementsRefs: { [key: string]: React.RefObject<HTMLDivElement> } = {
     homeRef: useRef<HTMLDivElement>(null),
@@ -50,7 +52,6 @@ export default function RootLayout({
   useEffect(() => {
     const initialScroll = () => {
       const currentHash = window.location.hash || "#home";
-      setHash(currentHash);
       const refKey = (currentHash.slice(1) +
         "Ref") as keyof typeof elementsRefs;
       elementsRefs[refKey]?.current?.scrollIntoView({ behavior: "smooth" });
@@ -66,6 +67,38 @@ export default function RootLayout({
     }
   };
 
+  useEffect(() => {
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const hash = `#${entry.target.id}`;
+          setCurrentHash(hash);
+          window.history.pushState({}, "", hash);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    });
+
+    Object.values(elementsRefs).forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => {
+      Object.values(elementsRefs).forEach((ref) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
+    };
+  }, [elementsRefs]);
+
   return (
     <html lang="en" className={`${exo.variable} scroll-smooth`}>
       <body>
@@ -77,9 +110,8 @@ export default function RootLayout({
                   id={hashValue.slice(1)}
                   onClick={() => {
                     handleClick(hashValue);
-                    setHash(hashValue);
                   }}
-                  className={`cursor-pointer rounded-full ${hash === hashValue ? "bg-movingGlow shadow-elementGlow3 h-4 w-4" : "h-2 w-2 bg-white"}`}
+                  className={`cursor-pointer rounded-full ${currentHash === hashValue ? "bg-movingGlow shadow-elementGlow3 h-4 w-4" : "h-2 w-2 bg-white"}`}
                 ></div>
               </div>
             ))}
@@ -92,42 +124,54 @@ export default function RootLayout({
               <img src="../../logo.png" alt="" className="w-36 md:w-auto" />
             </Link>
             <div className="flex space-x-6">
-              <Link
-                href="#home"
-                className={`hidden ease-in-out hover:text-bannerGradientStart md:block`}
+              <div
+                onClick={() => {
+                  handleClick("#home");
+                }}
+                className={`hidden cursor-pointer ease-in-out hover:text-bannerGradientStart md:block`}
               >
                 Main
-              </Link>
-              <Link
-                href="#advantages"
-                className={`hidden ease-in-out hover:text-bannerGradientStart md:block`}
+              </div>
+              <div
+                onClick={() => {
+                  handleClick("#advantages");
+                }}
+                className={`hidden cursor-pointer ease-in-out hover:text-bannerGradientStart md:block`}
               >
                 Advantages
-              </Link>
-              <Link
-                href="#dexNode"
-                className={`hidden ease-in-out hover:text-bannerGradientStart md:block`}
+              </div>
+              <div
+                onClick={() => {
+                  handleClick("#dexNode");
+                }}
+                className={`hidden cursor-pointer ease-in-out hover:text-bannerGradientStart md:block`}
               >
                 How to start
-              </Link>
-              <Link
-                href="#ecosystem"
-                className={`hidden ease-in-out hover:text-bannerGradientStart md:block`}
+              </div>
+              <div
+                onClick={() => {
+                  handleClick("#ecosystem");
+                }}
+                className={`hidden cursor-pointer ease-in-out hover:text-bannerGradientStart md:block`}
               >
                 Ecosystem
-              </Link>
-              <Link
-                href="#community"
-                className={`hidden ease-in-out hover:text-bannerGradientStart md:block`}
+              </div>
+              <div
+                onClick={() => {
+                  handleClick("#community");
+                }}
+                className={`hidden cursor-pointer ease-in-out hover:text-bannerGradientStart md:block`}
               >
                 Community
-              </Link>
-              <Link
-                href="#partners"
-                className={`hidden ease-in-out hover:text-bannerGradientStart md:block`}
+              </div>
+              <div
+                onClick={() => {
+                  handleClick("#partners");
+                }}
+                className={`hidden cursor-pointer ease-in-out hover:text-bannerGradientStart md:block`}
               >
                 Become a partner
-              </Link>
+              </div>
             </div>
             <GreenButton
               text={"Connect Wallet"}
