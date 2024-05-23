@@ -16,7 +16,7 @@ import OutlineButton from "~/components/OutlineButton";
 import TokensCarousel from "~/components/TokensCarousel";
 import GlassCard from "~/components/glassCard";
 import { useScroll } from "./layout";
-import { Stick1, Stick2, Sticks } from "~/components/sticks";
+import { Sticks } from "~/components/sticks";
 
 export default function HomePage() {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
@@ -29,13 +29,17 @@ export default function HomePage() {
         id="home"
         className="relative flex min-h-screen w-screen justify-center overflow-x-hidden overflow-y-hidden"
       >
-        <img
-          src="../../chip.png"
-          alt=""
-          className="absolute top-[380px] z-20 max-w-[350vw] object-cover md:-top-[22%] md:left-[7%] md:h-[125vh] md:w-[125vw]"
-        />
-        <div className="absolute right-[24%] top-0 ">
-          <Sticks />
+        <div className="absolute top-[380px] z-20 w-[350vw] md:-top-[22%] md:left-[7%] md:h-[125vh] md:w-[125vw]">
+          <div className="relative grid justify-items-center md:h-[125vh]">
+            <img
+              src="../../chip.png"
+              alt=""
+              className="z-20 h-full w-full max-w-[350vw] object-cover"
+            />
+            <div className="absolute top-10  z-10 md:top-48">
+              <Sticks />
+            </div>
+          </div>
         </div>
         <div className="z-30 mb-[8vh] mt-[21.5vh] grid w-full max-w-7xl content-between justify-items-center md:justify-items-start">
           <div className="grid justify-items-center md:block">
@@ -230,7 +234,7 @@ export default function HomePage() {
           </div>
           <div className="mt-12 flex flex-col justify-center px-4 md:mt-0 md:justify-start">
             <img src="../../dexNode1.gif" alt="" className="mix-blend-screen" />
-            <div className="text-xxs mt-12 space-y-4 md:text-base ">
+            <div className="mt-12 space-y-4 text-xxs md:text-base ">
               <div className="flex space-x-5">
                 <div className="space-y-4">
                   <div className="flex space-x-2">
@@ -428,7 +432,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="absolute -right-40 z-0">
-          <div className="bg-movingGlow h-80 w-80 rounded-full blur-[100px]"></div>
+          <div className="h-80 w-80 rounded-full bg-movingGlow blur-[100px]"></div>
         </div>
       </div>
       <div
@@ -460,7 +464,7 @@ export default function HomePage() {
           <GreenButton text="Become a partner" className="mt-8 w-64" />
         </div>
       </div>
-      <div id="footer" className="bg-footerColor flex justify-center py-10">
+      <div id="footer" className="flex justify-center bg-footerColor py-10">
         <div className="flex w-full max-w-7xl flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-8 grid justify-items-center space-y-4 md:mb-0 md:block">
             <img src="../../logo.png" alt="" className="w-64" />
