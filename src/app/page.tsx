@@ -39,18 +39,18 @@ export default function HomePage() {
             <div className="absolute top-10  z-10 md:top-48">
               <Sticks />
             </div>
-            <div className="animate-float4 absolute top-[277px] z-40 mr-2 ease-in-out md:top-[51.7vh]">
-              <img src="../../logos/4.png" alt="" className="w-36 md:w-48" />
+            <div className="animate-float4 absolute top-[277px] z-40 mr-2 ease-in-out md:top-[50.3vh]">
+              <img src="../../logos/4.png" alt="" className="w-36 md:w-80" />
             </div>
 
-            <div className="animate-float3 absolute top-[291px] z-[39] mr-3 ease-in-out md:top-[52.9vh]">
-              <img src="../../logos/3.png" alt="" className="w-32" />
+            <div className="animate-float3 absolute top-[291px] z-[39] mr-3 ease-in-out md:top-[51.5vh]">
+              <img src="../../logos/3.png" alt="" className="w-32 md:w-64" />
             </div>
-            <div className="animate-float2 absolute top-[294px] z-[38] mr-2 ease-in-out md:top-[53.4vh]">
-              <img src="../../logos/2.png" alt="" className="w-28" />
+            <div className="animate-float2 absolute top-[294px] z-[38] mr-2 ease-in-out md:top-[52.3vh]">
+              <img src="../../logos/2.png" alt="" className="w-28 md:w-56" />
             </div>
-            <div className="animate-float1 absolute top-[298px] z-[37] mr-1 ease-in-out md:top-[53.4vh]">
-              <img src="../../logos/1.png" alt="" className="w-24" />
+            <div className="animate-float1 absolute top-[298px] z-[37] mr-1 ease-in-out md:top-[52.6vh]">
+              <img src="../../logos/1.png" alt="" className="w-24 md:w-48" />
             </div>
           </div>
         </div>

@@ -70,20 +70,20 @@ export default {
 
       keyframes: {
         float4: {
-          "0%, 100%": { transform: "translateY(-100px) scale(1)" },
+          "0%, 100%": { transform: "translateY(-120px) scale(1)" },
           "50%": { transform: "translateY(0) scale(0.6)" },
         },
         float3: {
+          "0%, 100%": { transform: "translateY(-90px) scale(1)" },
+          "50%": { transform: "translateY(0) scale(0.72)" },
+        },
+        float2: {
           "0%, 100%": { transform: "translateY(-60px) scale(1)" },
           "50%": { transform: "translateY(0) scale(0.8)" },
         },
-        float2: {
-          "0%, 100%": { transform: "translateY(-30px) scale(1)" },
-          "50%": { transform: "translateY(0) scale(0.9)" },
-        },
         float1: {
-          "0%, 100%": { transform: "translateY(-10px) scale(1)" },
-          "50%": { transform: "translateY(0) scale(1)" },
+          "0%, 100%": { transform: "translateY(-30px) scale(1)" },
+          "50%": { transform: "translateY(0) scale(0.85)" },
         },
         horizontalFloat: {
           "0%, 100%": { transform: "translateX(100vw)" },
