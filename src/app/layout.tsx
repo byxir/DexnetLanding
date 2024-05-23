@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import "~/styles/globals.css";
@@ -6,11 +7,17 @@ import { exo } from "~/utils/fontComponents";
 import Link from "next/link";
 import GreenButton from "~/components/GreenButton";
 import { Bars2Icon } from "@heroicons/react/24/outline";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { createContext, useContext, useEffect, useRef, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 
 interface ScrollContextType {
-  elementsRefs: { [key: string]: React.RefObject<HTMLDivElement> };
+  elementsRefs: Record<string, React.RefObject<HTMLDivElement>>;
 }
 
 const ScrollContext = createContext<ScrollContextType | undefined>(undefined);
@@ -26,19 +33,30 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter();
   const [currentHash, setCurrentHash] = useState(
-    window.location.hash ?? "#home",
+    typeof window !== "undefined" && window.location.hash
+      ? window.location.hash
+      : "#home",
   );
 
-  const elementsRefs: { [key: string]: React.RefObject<HTMLDivElement> } = {
-    homeRef: useRef<HTMLDivElement>(null),
-    advantagesRef: useRef<HTMLDivElement>(null),
-    dexNodeRef: useRef<HTMLDivElement>(null),
-    ecosystemRef: useRef<HTMLDivElement>(null),
-    communityRef: useRef<HTMLDivElement>(null),
-    partnersRef: useRef<HTMLDivElement>(null),
-  };
+  const homeRef = useRef<HTMLDivElement>(null);
+  const advantagesRef = useRef<HTMLDivElement>(null);
+  const dexNodeRef = useRef<HTMLDivElement>(null);
+  const ecosystemRef = useRef<HTMLDivElement>(null);
+  const communityRef = useRef<HTMLDivElement>(null);
+  const partnersRef = useRef<HTMLDivElement>(null);
+
+  const elementsRefs: Record<string, React.RefObject<HTMLDivElement>> = useMemo(
+    () => ({
+      homeRef: homeRef,
+      advantagesRef: advantagesRef,
+      dexNodeRef: dexNodeRef,
+      ecosystemRef: ecosystemRef,
+      communityRef: communityRef,
+      partnersRef: partnersRef,
+    }),
+    [],
+  );
 
   const hashValues = [
     "#home",
@@ -52,8 +70,7 @@ export default function RootLayout({
   useEffect(() => {
     const initialScroll = () => {
       const currentHash = window.location.hash || "#home";
-      const refKey = (currentHash.slice(1) +
-        "Ref") as keyof typeof elementsRefs;
+      const refKey = currentHash.slice(1) + "Ref";
       elementsRefs[refKey]?.current?.scrollIntoView({ behavior: "smooth" });
     };
     initialScroll();
@@ -63,7 +80,6 @@ export default function RootLayout({
     const refKey = hashValue.slice(1) + "Ref";
     if (elementsRefs[refKey]?.current) {
       elementsRefs[refKey]?.current?.scrollIntoView({ behavior: "smooth" });
-      router.push(hashValue);
     }
   };
 
@@ -73,7 +89,6 @@ export default function RootLayout({
         if (entry.isIntersecting) {
           const hash = `#${entry.target.id}`;
           setCurrentHash(hash);
-          window.history.pushState({}, "", hash);
         }
       });
     };

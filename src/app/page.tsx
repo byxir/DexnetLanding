@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import Facebook from "public/socials/Facebook";
 import Instagram from "public/socials/Instagram";
 import LinkedIn from "public/socials/LinkedIn";
@@ -17,6 +18,7 @@ import GlassCard from "~/components/glassCard";
 import { useScroll } from "./layout";
 
 export default function HomePage() {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
   const { elementsRefs } = useScroll();
 
   return (
@@ -224,7 +226,7 @@ export default function HomePage() {
           </div>
           <div className="mt-12 flex flex-col justify-center px-4 md:mt-0 md:justify-start">
             <img src="../../dexNode1.gif" alt="" className="mix-blend-screen" />
-            <div className="mt-12 space-y-4 text-xxs md:text-base ">
+            <div className="text-xxs mt-12 space-y-4 md:text-base ">
               <div className="flex space-x-5">
                 <div className="space-y-4">
                   <div className="flex space-x-2">
@@ -454,7 +456,7 @@ export default function HomePage() {
           <GreenButton text="Become a partner" className="mt-8 w-64" />
         </div>
       </div>
-      <div id="footer" className="flex justify-center bg-footerColor py-10">
+      <div id="footer" className="bg-footerColor flex justify-center py-10">
         <div className="flex w-full max-w-7xl flex-col items-center justify-center md:flex-row md:justify-between">
           <div className="mb-8 grid justify-items-center space-y-4 md:mb-0 md:block">
             <img src="../../logo.png" alt="" className="w-64" />
