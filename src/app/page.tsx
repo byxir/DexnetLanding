@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="text-center text-5xl font-bold md:text-8xl">
               DexnetChain
             </div>
-            <div className="mt-8 w-96 p-0 text-center text-base font-bold md:px-0 md:text-xl">
+            <div className="mt-8 w-96 p-0 text-center text-base font-bold md:px-0 md:text-start md:text-xl">
               EVM compatible blockchain powered by confirmation of authority
               (COA)
             </div>

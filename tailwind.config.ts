@@ -38,8 +38,9 @@ export default {
         glassTexture: "rgba(50, 50, 50, 0.19)",
         footerColor: "#022325",
         glassElementGlowHelper: "rgba(0, 232, 175, 0.5)",
-
         movingGlow: "#07FEF0",
+
+        //sticks
       },
       animation: {
         horizontalFloat: "horizontalFloat 100s linear infinite",
