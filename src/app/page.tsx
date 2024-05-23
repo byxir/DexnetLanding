@@ -22,19 +22,21 @@ export default function HomePage() {
         <img
           src="../../chip.png"
           alt=""
-          className="absolute -top-[25%] left-[17%] -z-10 hidden h-[125vh] w-[125vw] object-cover md:block"
+          className="absolute top-[380px] -z-10 max-w-[350vw] object-cover md:-top-[25%] md:left-[17%] md:h-[125vh] md:w-[125vw]"
         />
         <div className="mb-[8vh] mt-[21.5vh] grid w-full max-w-7xl content-between justify-items-center md:justify-items-start">
-          <div className="">
-            <div className="text-5xl font-bold md:text-8xl">DexnetChain</div>
-            <div className="mt-8 w-96 text-xl font-bold">
+          <div className="grid justify-items-center md:block">
+            <div className="text-center text-5xl font-bold md:text-8xl">
+              DexnetChain
+            </div>
+            <div className="mt-8 w-96 p-0 text-center text-base font-bold md:px-0 md:text-xl">
               EVM compatible blockchain powered by confirmation of authority
               (COA)
             </div>
             <GreenButton text={"Connect Wallet"} className="mt-8 w-48" />
           </div>
-          <div className="w-full max-w-7xl">
-            <div className="w-full max-w-xl text-xl">
+          <div className="mt-[640px] grid w-full max-w-7xl justify-items-center space-y-8 md:mt-0 md:block">
+            <div className="w-11/12 max-w-xl text-center text-base md:w-full md:text-start md:text-xl">
               <span>It provides relatively</span>{" "}
               <span className="font-bold">
                 {" "}
