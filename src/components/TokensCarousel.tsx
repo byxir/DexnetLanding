@@ -1,9 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "~/components/ui/carousel";
 
 const TokensCarousel = () => {

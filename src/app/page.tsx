@@ -7,7 +7,6 @@ import Facebook from "public/socials/Facebook";
 import Instagram from "public/socials/Instagram";
 import LinkedIn from "public/socials/LinkedIn";
 import Twitter from "public/socials/Twitter";
-import YouTube from "public/socials/YouTube";
 import CommunityCarousel from "~/components/CommunityCarousel";
 import EcosystemCarousel from "~/components/EcosystemCarousel";
 import GreenButton from "~/components/GreenButton";
@@ -476,8 +475,8 @@ export default function HomePage() {
       >
         <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
           <div className="text-center text-4xl font-bold">OUR PARTNERS</div>
-          <div className="flex space-x-3 md:space-x-6">
-            <GlassCard className="relative  flex h-16 w-full content-center">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <GlassCard className="relative flex h-16 w-full content-center">
               <img
                 src="../../logos/coingeckoLogo.png"
                 alt=""

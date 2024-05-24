@@ -24,7 +24,7 @@ export const Sticks = () => {
   return (
     <div className="flex">
       <div
-        className={`z-10 mt-6 h-[320px] w-[1px] bg-stick-1 md:mt-0 md:h-[40vh]   md:h-[40vh] `}
+        className={`z-10 mt-6 h-[320px] w-[1px] bg-stick-1 md:mt-0 md:h-[40vh] `}
         style={{
           animation: `flicker 3s infinite ${getRandomNumber()}, float 10s ease-in-out infinite ${getRandomNumber()}`,
         }}
@@ -218,5 +218,3 @@ export const Sticks = () => {
     </div>
   );
 };
-
-const delayStops = ["75", "9000"];

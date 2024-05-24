@@ -2,11 +2,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "~/components/ui/carousel";
-import GreenButton from "./GreenButton";
-import OutlineButton from "./OutlineButton";
 import GlassCard from "./glassCard";
 
 const CommunityCarousel = () => {
