@@ -16,7 +16,9 @@ const CommunityCarousel = () => {
         <CarouselItem className="w-screen">
           <div className="flex w-screen justify-center">
             <div className="grid w-11/12 grid-cols-2 grid-rows-2 gap-4">
-              <GlassCard text="PHOTO1" className="h-24 w-full" />
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
               <GlassCard text="PHOTO2" className="h-24 w-full" />
               <GlassCard text="PHOTO3" className="h-24 w-full" />
               <GlassCard text="PHOTO4" className="h-24 w-full" />
@@ -26,7 +28,9 @@ const CommunityCarousel = () => {
         <CarouselItem className="w-screen">
           <div className="flex w-screen justify-center">
             <div className="grid w-11/12 grid-cols-2 grid-rows-2 gap-4">
-              <GlassCard text="PHOTO1" className="h-24 w-full" />
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
               <GlassCard text="PHOTO2" className="h-24 w-full" />
               <GlassCard text="PHOTO3" className="h-24 w-full" />
               <GlassCard text="PHOTO4" className="h-24 w-full" />
@@ -36,7 +40,9 @@ const CommunityCarousel = () => {
         <CarouselItem className="w-screen">
           <div className="flex w-screen justify-center">
             <div className="grid w-11/12 grid-cols-2 grid-rows-2 gap-4">
-              <GlassCard text="PHOTO1" className="h-24 w-full" />
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
               <GlassCard text="PHOTO2" className="h-24 w-full" />
               <GlassCard text="PHOTO3" className="h-24 w-full" />
               <GlassCard text="PHOTO4" className="h-24 w-full" />
