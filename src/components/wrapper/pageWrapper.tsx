@@ -174,7 +174,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
             </div>
           </div>
           <GreenButton
-            text={"Connect Wallet"}
+            text={"Synchronize Node"}
             className="hidden w-48 md:block"
           />
           <Bars2Icon className="block h-7 w-7 md:hidden" />

@@ -63,7 +63,7 @@ export default function HomePage() {
               EVM compatible blockchain powered by confirmation of authority
               (COA)
             </div>
-            <GreenButton text={"Connect Wallet"} className="mt-8 w-48" />
+            <GreenButton text={"Synchronize Node"} className="mt-8 w-48" />
           </div>
           <div className="mt-[640px] grid w-full max-w-7xl justify-items-center space-y-8 md:mt-0 md:block">
             <div className="w-11/12 max-w-xl text-center text-base md:w-full md:text-start md:text-xl">
