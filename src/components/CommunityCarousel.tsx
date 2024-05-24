@@ -19,9 +19,15 @@ const CommunityCarousel = () => {
               <GlassCard className="h-24 w-full">
                 <span>PHOTO</span>
               </GlassCard>
-              <GlassCard text="PHOTO2" className="h-24 w-full" />
-              <GlassCard text="PHOTO3" className="h-24 w-full" />
-              <GlassCard text="PHOTO4" className="h-24 w-full" />
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
             </div>
           </div>
         </CarouselItem>
@@ -31,9 +37,15 @@ const CommunityCarousel = () => {
               <GlassCard className="h-24 w-full">
                 <span>PHOTO</span>
               </GlassCard>
-              <GlassCard text="PHOTO2" className="h-24 w-full" />
-              <GlassCard text="PHOTO3" className="h-24 w-full" />
-              <GlassCard text="PHOTO4" className="h-24 w-full" />
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
             </div>
           </div>
         </CarouselItem>
@@ -43,9 +55,15 @@ const CommunityCarousel = () => {
               <GlassCard className="h-24 w-full">
                 <span>PHOTO</span>
               </GlassCard>
-              <GlassCard text="PHOTO2" className="h-24 w-full" />
-              <GlassCard text="PHOTO3" className="h-24 w-full" />
-              <GlassCard text="PHOTO4" className="h-24 w-full" />
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard className="h-24 w-full">
+                <span>PHOTO</span>
+              </GlassCard>
             </div>
           </div>
         </CarouselItem>
