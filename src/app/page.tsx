@@ -76,7 +76,7 @@ export default function HomePage() {
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/dexlogo.png"
+                    src="../../logos/dexLogo.png"
                     alt="network"
                     className="h-5 w-5"
                   />
@@ -89,7 +89,7 @@ export default function HomePage() {
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full p-[7px]">
                   <img
-                    src="../../logos/ethlogo.png"
+                    src="../../logos/ethLogo.png"
                     alt="network"
                     className="object-fit h-full"
                   />
@@ -102,7 +102,7 @@ export default function HomePage() {
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/arbitrumlogo.png"
+                    src="../../logos/arbitrumLogo.png"
                     alt="network"
                     className="h-6 w-6"
                   />
@@ -115,7 +115,7 @@ export default function HomePage() {
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/optimismlogo.png"
+                    src="../../logos/optimismLogo.png"
                     alt="network"
                     className="h-6 w-6"
                   />
@@ -128,7 +128,7 @@ export default function HomePage() {
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/polylogo.png"
+                    src="../../logos/polyLogo.png"
                     alt="network"
                     className="h-5 w-5"
                   />
@@ -141,7 +141,7 @@ export default function HomePage() {
               <div className="grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
-                    src="../../logos/bsclogo.png"
+                    src="../../logos/bscLogo.png"
                     alt="network"
                     className="h-5 w-5"
                   />
