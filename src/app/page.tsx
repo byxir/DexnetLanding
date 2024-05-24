@@ -15,8 +15,8 @@ import MedalCarousel from "~/components/MedalCarousel";
 import OutlineButton from "~/components/OutlineButton";
 import TokensCarousel from "~/components/TokensCarousel";
 import GlassCard from "~/components/glassCard";
-import { useScroll } from "./layout";
 import { Sticks } from "~/components/sticks";
+import { useScroll } from "~/components/wrapper/pageWrapper";
 
 export default function HomePage() {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
