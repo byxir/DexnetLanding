@@ -83,7 +83,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">DexnetChain</div>
-                  <div className="text-buttonGradientEnd">До 3800 tps</div>
+                  <div className="text-buttonGradientEnd">Up to 3800 tps</div>
                 </div>
               </div>
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
@@ -166,7 +166,7 @@ export default function HomePage() {
         <div className="flex w-screen flex-col space-y-6 md:w-full md:max-w-7xl md:space-y-20">
           <div className="grid w-full items-center">
             <div className="text-center text-3xl font-bold md:text-start md:text-5xl">
-              Преимущества
+              Advantages
             </div>
           </div>
           <div className="block md:hidden">
@@ -178,7 +178,7 @@ export default function HomePage() {
               <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
               <img src="../../medal1.png" alt="" className="z-30" />
               <div className="w-3/4 text-center">
-                Валидаторы поддерживают сеть и получают вознаграждения
+                Validators support the network and receive rewards.
               </div>
             </div>
             <div className="items-between relative z-10 grid h-96 w-96 justify-items-center space-y-2 rounded-xl bg-glassTexture p-8 backdrop-blur-md">
@@ -187,10 +187,10 @@ export default function HomePage() {
 
               <img src="../../medal2.png" alt="" className="z-30" />
               <div className="text-center text-sm">
-                Газ с транзакций перераспределяется между кошельками
-                валидаторами в пропорциях 90% – между всеми кошельками
-                валидаторами, 10% – на генезис кошелек (дефляционная модель
-                бизнеса)
+                Gas fees from transactions are redistributed among validator
+                wallets in the following proportions: 90% to all validator
+                wallets, and 10% to the genesis wallet (deflationary business
+                model).
               </div>
               <div className="absolute"></div>
             </div>
@@ -199,11 +199,11 @@ export default function HomePage() {
               <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
               <img src="../../medal3.png" alt="" className="z-30" />
               <div className="w-3/4 text-center">
-                Эмиссия ограничена 3,000,000,000 DNC
+                The total supply is limited to 3,000,000,000 DNC.
               </div>
               <div className="mt-2 grid w-full grid-cols-2 gap-x-4 px-4">
                 <GreenButton text="Whitepaper" className="w-full" />
-                <OutlineButton text="Whitepaper" className="text-white" />
+                <OutlineButton text="Tokenomics" className="text-white" />
                 <div className="absolute"></div>
               </div>
             </div>
@@ -337,9 +337,11 @@ export default function HomePage() {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  app.dexnetchain.com
                 </div>
-                <div className="text-center text-lg">Block Explorer</div>
+                <div className="text-center text-lg">
+                  Swap/Farming/Liquidity
+                </div>
               </div>
             </a>
             <a
@@ -357,9 +359,11 @@ export default function HomePage() {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  bridge.dexnetchain.com
                 </div>
-                <div className="text-center text-lg">Block Explorer</div>
+                <div className="text-center text-lg">
+                  Secure Blockchain Entry/Exit
+                </div>
               </div>
             </a>
             <a
@@ -375,11 +379,13 @@ export default function HomePage() {
                   className="h-full w-full transform object-cover"
                 />
               </div>
-              <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
+              <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center px-2">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  DEXSafe
                 </div>
-                <div className="text-center text-lg">Block Explorer</div>
+                <div className="text-center text-lg">
+                  Decentralized Wallet supporting 15+ blockchains on iOS/Android
+                </div>
               </div>
             </a>
           </div>
@@ -395,9 +401,9 @@ export default function HomePage() {
       >
         <div className="relative flex w-full max-w-7xl flex-col md:space-y-12">
           <div className="mb-12 text-center text-5xl font-bold md:mb-0 md:text-start">
-            СООБЩЕСТВО
-            <br></br>
             DEXCHAIN
+            <br></br>
+            COMMUNITY
           </div>
           <div className="mb-12 flex max-w-lg justify-center md:mb-0 md:block">
             <p className="w-11/12 text-center text-base md:w-full md:text-start md:text-xl">
@@ -429,14 +435,30 @@ export default function HomePage() {
           <div className=""></div>
           <div className="hidden md:block">
             <div className="grid max-w-6xl grid-cols-4 grid-rows-2 gap-8">
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
-              <GlassCard text="PHOTO" />
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
+              <GlassCard>
+                <span>PHOTO</span>
+              </GlassCard>
             </div>
           </div>
           <div className="mt-52 block md:hidden">
@@ -455,11 +477,41 @@ export default function HomePage() {
         <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
           <div className="text-center text-4xl font-bold">OUR PARTNERS</div>
           <div className="flex space-x-3 md:space-x-6">
-            <GlassCard text="Logo" className="h-16 w-full" />
-            <GlassCard text="Logo" className="h-16 w-full" />
-            <GlassCard text="Logo" className="h-16 w-full" />
-            <GlassCard text="Logo" className="hidden h-16 w-full md:grid" />
-            <GlassCard text="Logo" className="hidden h-16 w-full md:grid" />
+            <GlassCard className="relative  flex h-16 w-full content-center">
+              <img
+                src="../../logos/coingeckoLogo.png"
+                alt=""
+                className="px-3"
+              />
+            </GlassCard>
+            <GlassCard className="relative flex h-16 w-full content-center">
+              <img
+                src="../../logos/profixoneLogo.png"
+                alt=""
+                className="px-3"
+              />
+            </GlassCard>
+            <GlassCard className="relative flex h-16 w-full content-center">
+              <img
+                src="../../logos/pancakeswapLogo.png"
+                alt=""
+                className="px-3"
+              />
+            </GlassCard>
+            <GlassCard className="relative flex h-16 w-full content-center">
+              <img
+                src="../../logos/dexFreedomLogo.jpg"
+                alt=""
+                className="h-[50px] px-3"
+              />
+            </GlassCard>
+            <GlassCard className="relative flex h-16 w-full content-center">
+              <img
+                src="../../logos/coinmarketcapLogo.png"
+                alt=""
+                className="h-[50px] px-3"
+              />
+            </GlassCard>
           </div>
         </div>
         <div className="mt-24 grid w-11/12 justify-items-center md:w-full">
@@ -494,11 +546,18 @@ export default function HomePage() {
               FOLLOW US ON SOCIALS
             </div>
             <div className="flex space-x-6 md:space-x-3">
-              <Facebook />
-              <LinkedIn />
-              <Instagram />
-              <Twitter />
-              <YouTube />
+              <a href="https://www.facebook.com/people/Dexnet/100094044572486/">
+                <Facebook />
+              </a>
+              <a href="https://www.linkedin.com/company/dexnetone/">
+                <LinkedIn />
+              </a>
+              <a href="https://www.instagram.com/dexnet.one/">
+                <Instagram />
+              </a>
+              <a href="https://x.com/DexNet_one">
+                <Twitter />
+              </a>
             </div>
           </div>
           <div className="mt-8 flex space-x-6 md:hidden">
