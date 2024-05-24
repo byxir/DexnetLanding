@@ -69,7 +69,6 @@ export default function HomePage() {
             <div className="w-11/12 max-w-xl text-center text-base md:w-full md:text-start md:text-xl">
               <span>It provides relatively</span>{" "}
               <span className="font-bold">
-                {" "}
                 Faster transactions by using the Byzantine Fault Tolerance (BFT)
               </span>
             </div>
@@ -78,7 +77,7 @@ export default function HomePage() {
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
                     src="../../logos/dexlogo.png"
-                    alt=""
+                    alt="network"
                     className="h-5 w-5"
                   />
                 </div>
@@ -91,7 +90,7 @@ export default function HomePage() {
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full p-[7px]">
                   <img
                     src="../../logos/ethlogo.png"
-                    alt=""
+                    alt="network"
                     className="object-fit h-full"
                   />
                 </div>
@@ -104,7 +103,7 @@ export default function HomePage() {
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
                     src="../../logos/arbitrumlogo.png"
-                    alt=""
+                    alt="network"
                     className="h-6 w-6"
                   />
                 </div>
@@ -117,7 +116,7 @@ export default function HomePage() {
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
                     src="../../logos/optimismlogo.png"
-                    alt=""
+                    alt="network"
                     className="h-6 w-6"
                   />
                 </div>
@@ -130,7 +129,7 @@ export default function HomePage() {
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
                     src="../../logos/polylogo.png"
-                    alt=""
+                    alt="network"
                     className="h-5 w-5"
                   />
                 </div>
@@ -143,7 +142,7 @@ export default function HomePage() {
                 <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
                   <img
                     src="../../logos/bsclogo.png"
-                    alt=""
+                    alt="network"
                     className="h-5 w-5"
                   />
                 </div>
