@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { exo } from "~/utils/fontComponents";
 import Link from "next/link";
 import GreenButton from "~/components/GreenButton";
 import { Bars2Icon } from "@heroicons/react/24/outline";
@@ -61,7 +61,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
       elementsRefs[refKey]?.current?.scrollIntoView({ behavior: "smooth" });
     };
     initialScroll();
-  }, []);
+  }, [elementsRefs]);
 
   const handleClick = (hashValue: string) => {
     const refKey = hashValue.slice(1) + "Ref";
