@@ -70,19 +70,19 @@ export default {
 
       keyframes: {
         float4: {
-          "0%, 100%": { transform: "translateY(-120px) scale(1)" },
+          "0%, 100%": { transform: "translateY(-80px) scale(1)" },
           "50%": { transform: "translateY(0) scale(0.6)" },
         },
         float3: {
-          "0%, 100%": { transform: "translateY(-90px) scale(1)" },
+          "0%, 100%": { transform: "translateY(-60px) scale(1)" },
           "50%": { transform: "translateY(0) scale(0.72)" },
         },
         float2: {
-          "0%, 100%": { transform: "translateY(-60px) scale(1)" },
+          "0%, 100%": { transform: "translateY(-40px) scale(1)" },
           "50%": { transform: "translateY(0) scale(0.8)" },
         },
         float1: {
-          "0%, 100%": { transform: "translateY(-30px) scale(1)" },
+          "0%, 100%": { transform: "translateY(-20px) scale(1)" },
           "50%": { transform: "translateY(0) scale(0.85)" },
         },
         horizontalFloat: {
@@ -125,8 +125,5 @@ export default {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require("tailwindcss-animation-delay"),
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

@@ -1,7 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 "use client";
-
+import { Bsc } from "public/logoSVGS/bsc";
+import { Eth } from "public/logoSVGS/eth";
+import { Dex } from "public/logoSVGS/dex";
+import { Pol } from "public/logoSVGS/pol";
+import { Opt } from "public/logoSVGS/opt";
+import { Arb } from "public/logoSVGS/arb";
 /* eslint-disable @next/next/no-img-element */
 import Facebook from "public/socials/Facebook";
 import Instagram from "public/socials/Instagram";
@@ -38,17 +43,17 @@ export default function HomePage() {
             <div className="absolute top-10  z-10 md:top-48">
               <Sticks />
             </div>
-            <div className="absolute top-[288px] z-40 mr-2 animate-float4 ease-in-out md:top-[50vh]">
+            <div className="absolute top-[288px] z-40 mr-2 animate-float4 ease-in-out md:top-[47vh]">
               <img src="../../logos/4.png" alt="" className="w-36 md:w-80" />
             </div>
 
-            <div className="absolute top-[291px] z-[39] mr-3 animate-float3 ease-in-out md:top-[51.2vh]">
+            <div className="absolute top-[291px] z-[39] mr-3 animate-float3 ease-in-out md:top-[49vh]">
               <img src="../../logos/3.png" alt="" className="w-32 md:w-64" />
             </div>
-            <div className="absolute top-[294px] z-[38] mr-2 animate-float2 ease-in-out md:top-[51.8vh]">
+            <div className="absolute top-[294px] z-[38] mr-2 animate-float2 ease-in-out md:top-[49.8vh]">
               <img src="../../logos/2.png" alt="" className="w-28 md:w-56" />
             </div>
-            <div className="absolute top-[298px] z-[37] mr-1 animate-float1 ease-in-out md:top-[52.6vh]">
+            <div className="absolute top-[298px] z-[37] mr-1 animate-float1 ease-in-out md:top-[51vh]">
               <img src="../../logos/1.png" alt="" className="w-24 md:w-48" />
             </div>
           </div>
@@ -73,12 +78,8 @@ export default function HomePage() {
             </div>
             <div className="mt-6 hidden max-w-7xl grid-cols-6 gap-x-6 md:grid">
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
-                  <img
-                    src="../../logos/dexLogo.png"
-                    alt="network"
-                    className="h-5 w-5"
-                  />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+                  <Dex />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">DexnetChain</div>
@@ -86,12 +87,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full p-[7px]">
-                  <img
-                    src="../../logos/ethLogo.png"
-                    alt="network"
-                    className="object-fit h-full"
-                  />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement p-[7px]">
+                  <Eth />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">Ethereum</div>
@@ -99,12 +96,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
-                  <img
-                    src="../../logos/arbitrumLogo.png"
-                    alt="network"
-                    className="h-6 w-6"
-                  />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+                  <Arb />{" "}
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">Arbitrum</div>
@@ -112,12 +105,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
-                  <img
-                    src="../../logos/optimismLogo.png"
-                    alt="network"
-                    className="h-6 w-6"
-                  />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+                  <Opt />{" "}
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">Optimism</div>
@@ -125,12 +114,8 @@ export default function HomePage() {
                 </div>
               </div>
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
-                  <img
-                    src="../../logos/polyLogo.png"
-                    alt="network"
-                    className="h-5 w-5"
-                  />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
+                  <Pol />
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">Polygon</div>
@@ -138,7 +123,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
-                <div className="bg-lightelement flex h-10 w-10 items-center justify-center rounded-full">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lightElement">
                   <img
                     src="../../logos/bscLogo.png"
                     alt="network"
@@ -404,13 +389,7 @@ export default function HomePage() {
             <br></br>
             COMMUNITY
           </div>
-          <div className="mb-12 flex max-w-lg justify-center md:mb-0 md:block">
-            <p className="w-11/12 text-center text-base md:w-full md:text-start md:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
+          <div className="mb-12 flex max-w-lg justify-center md:mb-0 md:block"></div>
           <div className="flex justify-center space-x-8 md:justify-start">
             <div className="flex flex-col justify-center md:block">
               <div className="text-center text-5xl font-bold text-bannerGradientStart md:text-start">
@@ -473,7 +452,7 @@ export default function HomePage() {
         id="partners"
         className="flex h-screen w-screen flex-col items-center justify-center"
       >
-        <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
+        {/* <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
           <div className="text-center text-4xl font-bold">OUR PARTNERS</div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             <GlassCard className="relative flex h-16 w-full content-center">
@@ -512,18 +491,18 @@ export default function HomePage() {
               />
             </GlassCard>
           </div>
-        </div>
+        </div> */}
         <div className="mt-24 grid w-11/12 justify-items-center md:w-full">
           <div className="text-center text-3xl font-bold md:text-5xl">
             BECOME A DEXCHAIN
             <br></br>
             PARTNER
           </div>
-          <div className="mt-8 max-w-4xl text-center text-sm md:text-lg">
+          {/* <div className="mt-8 max-w-4xl text-center text-sm md:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
-          </div>
+          </div> */}{" "}
           <GreenButton text="Become a partner" className="mt-8 w-64" />
         </div>
       </div>

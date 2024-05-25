@@ -103,7 +103,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="">
       <div className="relative flex h-screen w-screen justify-center overflow-x-hidden font-exo text-white">
-        <div className="fixed left-16 top-[calc(50vh-150px)] z-40 hidden justify-items-center space-y-8 md:grid">
+        <div className="fixed left-6 top-[calc(50vh-150px)] z-40 hidden justify-items-center space-y-8 md:grid 2xl:left-16">
           {hashValues.map((hashValue) => (
             <div key={hashValue} className="mt-20">
               <div
