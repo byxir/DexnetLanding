@@ -413,29 +413,69 @@ export default function HomePage() {
           <div className=""></div>
           <div className="hidden md:block">
             <div className="grid max-w-6xl grid-cols-4 grid-rows-2 gap-8">
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/1.jpeg"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/2.jpeg"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/3.jpeg"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/4.WEBP"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/5.WEBP"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/6.WEBP"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/7.WEBP"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
-              <GlassCard>
-                <span>PHOTO</span>
+              <GlassCard className="h-32 w-64 rounded-xg">
+                <img
+                  src="../../community/8.jpeg"
+                  alt=""
+                  className="h-full w-full rounded-xg object-cover"
+                />
+                {/* <span>PHOTO</span> */}
               </GlassCard>
             </div>
           </div>
