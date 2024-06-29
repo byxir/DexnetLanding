@@ -19,7 +19,7 @@ const MedalCarousel = () => {
               <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
               <img src="../../medal1.png" alt="" className="z-30" />
               <div className="w-3/4 text-center">
-                Валидаторы поддерживают сеть и получают вознаграждения
+                Validators support the network and receive rewards.
               </div>
             </div>
           </div>
@@ -32,10 +32,10 @@ const MedalCarousel = () => {
 
               <img src="../../medal2.png" alt="" className="z-30" />
               <div className="text-center text-sm">
-                Газ с транзакций перераспределяется между кошельками
-                валидаторами в пропорциях 90% – между всеми кошельками
-                валидаторами, 10% – на генезис кошелек (дефляционная модель
-                бизнеса)
+                The gas from transactions is redistributed among validator
+                wallets in the following proportions: 90% to all validator
+                wallets, and 10% to the genesis wallet (deflationary business
+                model).
               </div>
               <div className="absolute"></div>
             </div>
@@ -48,7 +48,7 @@ const MedalCarousel = () => {
               <div className="absolute top-12 z-20 h-10 w-8 shadow-elementGlow2"></div>
               <img src="../../medal3.png" alt="" className="z-30" />
               <div className="w-3/4 text-center">
-                Эмиссия ограничена 3,000,000,000 DNC
+                Emission is limited to 3,000,000,000 DNC.
               </div>
               <div className="mt-2 grid w-full grid-cols-2 gap-x-4 px-4">
                 <GreenButton text="Whitepaper" className="w-full" />

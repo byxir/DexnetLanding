@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   Carousel,
   CarouselContent,
@@ -11,12 +12,11 @@ import OutlineButton from "./OutlineButton";
 const EcosystemCarousel = () => {
   return (
     <Carousel>
-      <CarouselContent className="pt-16">
-        {" "}
+      <CarouselContent className="pt-10">
         <CarouselItem>
           <div className="flex w-screen justify-center">
             <a
-              href="/"
+              href="https://explorer.dexnetchain.com/"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
             >
               <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
@@ -30,7 +30,7 @@ const EcosystemCarousel = () => {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  explorer.dexchain.com
                 </div>
                 <div className="text-center text-lg">Block Explorer</div>
               </div>
@@ -40,7 +40,7 @@ const EcosystemCarousel = () => {
         <CarouselItem>
           <div className="flex w-screen justify-center">
             <a
-              href="/"
+              href="https://app.dexnetchain.com/"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
             >
               <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
@@ -54,9 +54,11 @@ const EcosystemCarousel = () => {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  app.dexnetchain.com
                 </div>
-                <div className="text-center text-lg">Block Explorer</div>
+                <div className="text-center text-lg">
+                  Swap/Farming/Liquidity
+                </div>
               </div>
             </a>
           </div>
@@ -64,7 +66,7 @@ const EcosystemCarousel = () => {
         <CarouselItem>
           <div className="flex w-screen justify-center">
             <a
-              href="/"
+              href="https://app.dexnetchain.com/bridge"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
             >
               <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
@@ -78,9 +80,11 @@ const EcosystemCarousel = () => {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  bridge.dexnetchain.com
                 </div>
-                <div className="text-center text-lg">Block Explorer</div>
+                <div className="text-center text-lg">
+                  Sequre Blockchain Entry/Exit
+                </div>
               </div>
             </a>
           </div>
@@ -102,9 +106,11 @@ const EcosystemCarousel = () => {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  DEXSafe
                 </div>
-                <div className="text-center text-lg">Block Explorer</div>
+                <div className="px-2 text-center text-lg">
+                  Decentralized Wallet supporting 15+ blockchains on iOS/Android
+                </div>
               </div>
             </a>
           </div>

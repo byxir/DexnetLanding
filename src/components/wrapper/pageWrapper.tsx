@@ -13,6 +13,15 @@ import {
   useState,
 } from "react";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "~/components/ui/sheet";
+
 interface ScrollContextType {
   elementsRefs: Record<string, React.RefObject<HTMLDivElement>>;
 }
@@ -25,6 +34,8 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
       ? window.location.hash
       : "#home",
   );
+
+  const [slideoverOpen, setSlideoverOpen] = useState(false);
 
   const homeRef = useRef<HTMLDivElement>(null);
   const advantagesRef = useRef<HTMLDivElement>(null);
@@ -121,7 +132,7 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
         </div>
         <div className="fixed z-50 mt-4 flex h-14 w-11/12 items-center justify-between rounded-xg bg-glassTexture px-4 backdrop-blur-xl md:h-20 md:w-full md:max-w-7xl">
           <Link href="/" className="">
-            <img src="../../logo.png" alt="" className="w-36 md:w-auto" />
+            <img src="../../logo.png" alt="" className="w-36 md:w-[186px]" />
           </Link>
           <div className="flex space-x-6">
             <div
@@ -177,7 +188,69 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
             text={"Synchronize Node"}
             className="hidden w-48 md:block"
           />
-          <Bars2Icon className="block h-7 w-7 md:hidden" />
+          <Sheet open={slideoverOpen} onOpenChange={setSlideoverOpen}>
+            <SheetTrigger>
+              <Bars2Icon className="block h-7 w-7 md:hidden" />
+            </SheetTrigger>
+            <SheetContent className="pt-12 text-center">
+              <div className="grid justify-items-center px-10">
+                <div
+                  onClick={() => {
+                    setSlideoverOpen(false);
+                    handleClick("#home");
+                  }}
+                  className={` w-full cursor-pointer pb-4 ease-in-out hover:text-bannerGradientStart`}
+                >
+                  Main
+                </div>
+                <div
+                  onClick={() => {
+                    setSlideoverOpen(false);
+                    handleClick("#advantages");
+                  }}
+                  className={` w-full cursor-pointer py-4 ease-in-out hover:text-bannerGradientStart`}
+                >
+                  Advantages
+                </div>
+                <div
+                  onClick={() => {
+                    setSlideoverOpen(false);
+                    handleClick("#dexNode");
+                  }}
+                  className={` w-full cursor-pointer py-4 ease-in-out hover:text-bannerGradientStart`}
+                >
+                  How to start
+                </div>
+                <div
+                  onClick={() => {
+                    setSlideoverOpen(false);
+                    handleClick("#ecosystem");
+                  }}
+                  className={` w-full cursor-pointer py-4 ease-in-out hover:text-bannerGradientStart`}
+                >
+                  Ecosystem
+                </div>
+                <div
+                  onClick={() => {
+                    setSlideoverOpen(false);
+                    handleClick("#community");
+                  }}
+                  className={` w-full cursor-pointer py-4 ease-in-out hover:text-bannerGradientStart`}
+                >
+                  Community
+                </div>
+                <div
+                  onClick={() => {
+                    setSlideoverOpen(false);
+                    handleClick("#partners");
+                  }}
+                  className={` cursor-pointer pt-4 ease-in-out hover:text-bannerGradientStart`}
+                >
+                  Become a partner
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
         <img
           src="../../backgroundPng.png"

@@ -145,7 +145,7 @@ export default function HomePage() {
       <div
         ref={elementsRefs.advantagesRef}
         id="advantages"
-        className="grid h-screen w-screen flex-col items-center justify-items-center"
+        className="grid min-h-screen w-screen flex-col items-center justify-items-center"
       >
         <div className="flex w-screen flex-col space-y-6 md:w-full md:max-w-7xl md:space-y-20">
           <div className="grid w-full items-center">
@@ -199,7 +199,7 @@ export default function HomePage() {
         id="dexNode"
         className="flex justify-center"
       >
-        <div className="flex h-screen w-screen max-w-7xl flex-col items-center justify-items-center md:flex-row md:space-x-[10%]">
+        <div className="flex min-h-screen w-screen max-w-7xl flex-col items-center justify-items-center md:flex-row md:space-x-[10%]">
           <div className="space-y-12">
             <div className="space-y-4">
               <div className="w-full max-w-96 text-center text-3xl font-bold md:text-start md:text-5xl">
@@ -279,15 +279,15 @@ export default function HomePage() {
       <div
         ref={elementsRefs.ecosystemRef}
         id="ecosystem"
-        className="flex h-screen w-screen items-center justify-center"
+        className="flex min-h-screen w-screen items-center justify-center"
       >
-        <div className="w-screen max-w-7xl md:space-y-20">
+        <div className="w-screen max-w-7xl pt-16 md:space-y-20 md:pt-0">
           <div className="text-center text-3xl font-bold md:text-start md:text-7xl">
             DEXCHAIN ECOSYSTEM
           </div>
           <div className="hidden space-x-8 md:flex">
             <a
-              href="/"
+              href="https://explorer.dexnetchain.com/"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
             >
               <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
@@ -301,13 +301,13 @@ export default function HomePage() {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  scan.dexchain.com
+                  explorer.dexchain.com
                 </div>
                 <div className="text-center text-lg">Block Explorer</div>
               </div>
             </a>
             <a
-              href="/"
+              href="https://app.dexnetchain.com/"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
             >
               <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
@@ -329,7 +329,7 @@ export default function HomePage() {
               </div>
             </a>
             <a
-              href="/"
+              href="https://app.dexnetchain.com/bridge"
               className="relative grid h-[500px] w-[307px] grid-rows-[3fr_2fr] justify-items-center gap-y-6 rounded-xl bg-glassTexture backdrop-blur-md transition ease-in-out hover:-translate-y-1.5"
             >
               <div className="absolute top-6 -z-10 h-64 w-64 bg-bannerGradientEnd blur-2xl"></div>
@@ -373,7 +373,7 @@ export default function HomePage() {
               </div>
             </a>
           </div>
-          <div className="block md:hidden">
+          <div className="md:hidden">
             <EcosystemCarousel />
           </div>
         </div>
@@ -383,7 +383,7 @@ export default function HomePage() {
         id="community"
         className="relative flex min-h-screen w-screen items-center justify-center"
       >
-        <div className="relative flex w-full max-w-7xl flex-col md:space-y-12">
+        <div className="relative flex w-full max-w-7xl flex-col pt-16 md:space-y-12 md:pt-0">
           <div className="mb-12 text-center text-5xl font-bold md:mb-0 md:text-start">
             DEXCHAIN
             <br></br>
@@ -415,7 +415,7 @@ export default function HomePage() {
             <div className="grid max-w-6xl grid-cols-4 grid-rows-2 gap-8">
               <GlassCard className="h-32 w-64 rounded-xg">
                 <img
-                  src="../../community/1.jpeg"
+                  src="../../community/1.webp"
                   alt=""
                   className="h-full w-full rounded-xg object-cover"
                 />
@@ -423,15 +423,14 @@ export default function HomePage() {
               </GlassCard>
               <GlassCard className="h-32 w-64 rounded-xg">
                 <img
-                  src="../../community/2.jpeg"
+                  src="../../community/2.webp"
                   alt=""
                   className="h-full w-full rounded-xg object-cover"
                 />
-                {/* <span>PHOTO</span> */}
               </GlassCard>
               <GlassCard className="h-32 w-64 rounded-xg">
                 <img
-                  src="../../community/3.jpeg"
+                  src="../../community/3.webp"
                   alt=""
                   className="h-full w-full rounded-xg object-cover"
                 />
@@ -490,7 +489,7 @@ export default function HomePage() {
       <div
         ref={elementsRefs.partnersRef}
         id="partners"
-        className="flex h-screen w-screen flex-col items-center justify-center"
+        className="flex min-h-screen w-screen flex-col items-center justify-center"
       >
         {/* <div className="flex w-11/12 max-w-7xl flex-col justify-center space-y-12 md:w-full">
           <div className="text-center text-4xl font-bold">OUR PARTNERS</div>
@@ -552,7 +551,7 @@ export default function HomePage() {
             <img src="../../logo.png" alt="" className="w-64" />
             <div className="hidden text-sm md:block">
               Copyright © 2010-2024 Dexnet technology.<br></br>
-              Все права защищены.
+              All rights reserved.
             </div>
           </div>
           <div className="hidden space-x-6 md:flex">
@@ -584,7 +583,7 @@ export default function HomePage() {
           </div>
           <div className="mt-12 block text-center text-xs md:hidden">
             Copyright © 2010-2024 Dexnet technology.<br></br>
-            Все права защищены.
+            All rights reserved.
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ const TokensCarousel = () => {
                 </div>
                 <div className="flex flex-col">
                   <div className="text-lg font-bold">DexnetChain</div>
-                  <div className="text-buttonGradientEnd">До 3800 tps</div>
+                  <div className="text-buttonGradientEnd">Up to 3800 tps</div>
                 </div>
               </div>
               <div className=" grid h-32 w-full max-w-52 content-between rounded-xg bg-glassTexture p-3 backdrop-blur-md">
