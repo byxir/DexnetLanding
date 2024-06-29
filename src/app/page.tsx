@@ -301,7 +301,7 @@ export default function HomePage() {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  explorer.dexchain.com
+                  Check and analyze transactions
                 </div>
                 <div className="text-center text-lg">Block Explorer</div>
               </div>
@@ -430,7 +430,7 @@ export default function HomePage() {
               </GlassCard>
               <GlassCard className="h-32 w-64 rounded-xg">
                 <img
-                  src="../../community/3.webp"
+                  src="../../community/3.jpeg"
                   alt=""
                   className="h-full w-full rounded-xg object-cover"
                 />

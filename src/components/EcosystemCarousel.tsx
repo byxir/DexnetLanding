@@ -30,7 +30,7 @@ const EcosystemCarousel = () => {
               </div>
               <div className="absolute bottom-10 z-30 flex w-full flex-col justify-center">
                 <div className="text-center text-lg text-bannerGradientStart">
-                  explorer.dexchain.com
+                  Check and analyze transactions
                 </div>
                 <div className="text-center text-lg">Block Explorer</div>
               </div>
