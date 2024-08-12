@@ -229,7 +229,9 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-12 flex flex-col justify-center px-4 md:mt-0 md:justify-start">
-            <img src="../../dexNode1.gif" alt="" className="mix-blend-screen" />
+            <div className="flex items-center justify-center">
+              <img src="../../DexNode1.png" alt="" className="w-64" />
+            </div>
             <div className="mt-12 space-y-4 text-xxs md:text-base ">
               <div className="flex space-x-5">
                 <div className="space-y-4">
@@ -254,8 +256,8 @@ export default function HomePage() {
                     <span className="">4 GB</span>
                   </div>
                   <div className="flex space-x-2">
-                    <span className="text-bannerGradientStart">SD:</span>
-                    <span className="">2TB</span>
+                    <span className="text-bannerGradientStart">SSD:</span>
+                    <span className="">1TB</span>
                   </div>
                   <div className="flex space-x-2">
                     <span className="text-bannerGradientStart">GSM:</span>
