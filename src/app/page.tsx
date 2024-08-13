@@ -244,10 +244,8 @@ export default function HomePage() {
                     <span className="">RJ45</span>
                   </div>
                   <div className="flex space-x-2">
-                    <span className="text-bannerGradientStart">
-                      Satellite system:
-                    </span>
-                    <span className="">SpaceX SWARM</span>
+                    <span className="text-bannerGradientStart">GSM:</span>
+                    <span className="">with e-sim DEX Mobile</span>
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -259,17 +257,7 @@ export default function HomePage() {
                     <span className="text-bannerGradientStart">SSD:</span>
                     <span className="">1TB</span>
                   </div>
-                  <div className="flex space-x-2">
-                    <span className="text-bannerGradientStart">GSM:</span>
-                    <span className="">with e-sim DEX Mobile</span>
-                  </div>
                 </div>
-              </div>
-              <div className="flex space-x-2">
-                <span className="text-bannerGradientStart">DexWan: </span>
-                <span className="">
-                  own high-frequency terrestial channel 915MHz, 5.5k m k
-                </span>
               </div>
             </div>
           </div>
