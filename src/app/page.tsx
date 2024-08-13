@@ -186,8 +186,16 @@ export default function HomePage() {
                 The total supply is limited to 3,000,000,000 DNC.
               </div>
               <div className="mt-2 grid w-full grid-cols-2 gap-x-4 px-4">
-                <GreenButton text="Whitepaper" className="w-full" />
-                <OutlineButton text="Tokenomics" className="text-white" />
+                <a
+                  href="https://dexnet.one/docs/whitepaper.pdf"
+                  target="_blank"
+                  className=""
+                >
+                  <GreenButton text="Whitepaper" className="w-full" />
+                </a>
+                <a href="https://dexnet.one/docs/" target="_blank" className="">
+                  <OutlineButton text="Tokenomics" className="text-white" />
+                </a>
                 <div className="absolute"></div>
               </div>
             </div>
@@ -391,7 +399,7 @@ export default function HomePage() {
             </div>
             <div className="">
               <div className="text-center text-5xl font-bold text-bannerGradientStart md:text-start">
-                271 890
+                25 000
               </div>
               <div className="text-center text-lg md:text-start">clients</div>
             </div>
@@ -545,8 +553,20 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hidden space-x-6 md:flex">
-            <div className="">Privacy Policy</div>
-            <div className="">Terms of Service</div>
+            <a
+              href="https://dexnet.one/docs/privacy_policy.html"
+              target="_blank"
+              className=""
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://dexnet.one/docs/user_agreement.pdf"
+              target="_blank"
+              className=""
+            >
+              User agreement
+            </a>
           </div>
           <div className="space-y-4">
             <div className="pb-1 text-center font-bold text-white text-opacity-50 md:text-start">
@@ -568,8 +588,20 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-8 flex space-x-6 md:hidden">
-            <div className="">Privacy Policy</div>
-            <div className="">Terms of Service</div>
+            <a
+              href="https://dexnet.one/docs/privacy_policy.html"
+              target="_blank"
+              className=""
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://dexnet.one/docs/user_agreement.pdf"
+              target="_blank"
+              className=""
+            >
+              User agreement
+            </a>
           </div>
           <div className="mt-12 block text-center text-xs md:hidden">
             Copyright © 2010-2024 Dexnet technology.<br></br>
