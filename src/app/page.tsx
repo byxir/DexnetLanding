@@ -64,8 +64,7 @@ export default function HomePage() {
               DexnetChain
             </div>
             <div className="mt-8 w-96 p-0 text-center text-base font-bold md:px-0 md:text-start md:text-xl">
-              EVM compatible blockchain powered by confirmation of authority
-              (COA)
+              EVM compatible blockchain powered by Proof Of Authority (POA)
             </div>
             <GreenButton text={"Synchronize Node"} className="mt-8 w-48" />
           </div>
